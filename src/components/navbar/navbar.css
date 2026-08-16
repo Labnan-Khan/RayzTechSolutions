@@ -352,4 +352,9 @@
     .navbar .navbarH1{
         left: 20px;
     }
+    .navbar .navbarContactUs{
+        height: 50px;
+        width: auto;
+        padding: 10px;
+    }
 }
