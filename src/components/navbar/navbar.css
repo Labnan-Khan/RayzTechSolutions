@@ -295,11 +295,13 @@
 }
 
 
-/* @media (max-width:768px){ */
+
 @media (max-width:968px){
 
     .navbar{
         justify-content: end;
+
+        padding: 10px;
     }
 
     .navbar .navMenu{
@@ -341,4 +343,13 @@
         background-color: transparent;
     }
 
+}
+
+@media (max-width:768px){
+    .navbar{
+        /*  */
+    }
+    .navbar .navbarH1{
+        left: 20px;
+    }
 }
