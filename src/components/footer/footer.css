@@ -1,0 +1,48 @@
+.footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 20px;
+    gap: 10px;
+    position: relative;
+    &::before{
+        position: absolute;
+        height: 1px;
+        top: 0px;
+        left: 20px;
+        right: 20px;
+        content: "";
+        background-color: rgba(172, 255, 47, 0.309);
+    }
+}
+.footer h1{
+    background: linear-gradient(to right, rgb(153, 255, 1), white 40%);
+     -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.footer div:nth-child(3){
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    
+}
+.footer div:nth-child(3) span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 25px;
+}
+.footer div:nth-child(5){
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+}

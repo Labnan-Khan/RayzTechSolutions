@@ -44,7 +44,7 @@ function Navbar() {
 
   return (
     <div className={`navbar`}>
-      <h1 className='navbarH1'>Arounda</h1>
+      <h1 className='navbarH1'>RayzTechSolutions</h1>
       <div className='navbarMain'>
         <ul  className={`navLi ${(dropMenu)? " navLiM" : ""}`} onClick={ ()=>{ setClickMenu(!clickMenu); setDropMenu(!dropMenu)} }>
             <li>
