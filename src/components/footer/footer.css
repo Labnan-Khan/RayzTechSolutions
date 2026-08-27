@@ -3,8 +3,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 30px 20px;
-    gap: 10px;
+    padding: 30px 30px;
+    gap: 30px;
     position: relative;
     &::before{
         position: absolute;
@@ -16,6 +16,18 @@
         background-color: rgba(172, 255, 47, 0.309);
     }
 }
+.footer .footerHeading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.footer .footerHeading div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
 .footer h1{
     background: linear-gradient(to right, rgb(153, 255, 1), white 40%);
      -webkit-background-clip: text;
@@ -23,26 +35,78 @@
     -webkit-text-fill-color: transparent;
 }
 
-.footer div:nth-child(3){
+.footer .footerHeading .fhrightSec{
     display: flex;
-    justify-content: start;
-    align-items: center;
-    gap: 10px;
-    font-size: 20px;
-    padding-bottom: 20px;
-    position: relative;
-    
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 20px;
 }
-.footer div:nth-child(3) span{
+.footer .footerHeading .fhrightSec div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer .footerHeading .fhrightSec div span{
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     font-size: 25px;
 }
-.footer div:nth-child(5){
+.footer .footerHeading div:nth-child(2) form{
     display: flex;
-    justify-content: start;
+    width: fit-content;
+    justify-content: center;
+    /* gap: 10px; */
+    background-color: rgb(255, 255, 255);
+    /* height: 40px; */
+    border-radius: 10px;
+    overflow: hidden;
+}
+.footer .footerHeading div:nth-child(2) form input{
+    border: none;
+    padding: 20px 10px;
+    font-size: 16px;
+    color: black;
+    &:hover::placeholder{
+        color: black;
+    }
+    
+}
+.footer .footerHeading div:nth-child(2) form input::placeholder{
+    color: rgb(126, 124, 124);
+
+    transition: all 0.3s ease;
+}
+.footer .footerHeading div:nth-child(2) form button{
+    display: flex;
+    justify-content: center;
+    padding: 21px 10px;
+    color: black;
+    font-size: 16px;
+    border: 1px solid greenyellow;
+    background-color: greenyellow;
+    cursor: pointer;
+    &:hover{
+        background-color: rgba(172, 255, 47, 0.784);
+    }
+}
+.footer .footerbottom{
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
+    font-size: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    border-top: 1px solid rgba(172, 255, 47, 0.31);
+    padding-top: 20px;
+    
+}
+.footer .footerbottom div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }

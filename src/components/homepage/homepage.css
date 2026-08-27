@@ -6,9 +6,6 @@
     align-items: center;
     gap: 150px;
 
-    background-image: url(../../assets/homePageHerosectionImg.avif);
-    background-repeat: no-repeat;
-    background-size: cover;
     
 }
 .homePage .homeHero{
@@ -20,63 +17,109 @@
     gap: 10px;
     padding: 20px;
     padding-top: 50px;
+    
     /* overflow: visible; */
 }
-.homePage .homeHero .homeHeroHeading{
+.homePage .homeHero .heroHeading{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
     gap: 10px;
     width: 90%;
 }
-.homePage .homeHero h1{
-    font-size: 40px;
-    width: 100%;
-    text-align: center;
+
+.homePage .homeHero .heroHeading .heroheadingrightImg{
+ background-image: url(../../assets/heroimg.png);
+ width: 50%;
+ aspect-ratio: 12/9;
+ background-size: cover;
+ background-position: center;
+ background-repeat: no-repeat;
 }
-.homePage .homeHero .homeHeroHeading div {
+
+.homePage .homeHero .heroHeading .heroheadingLeft{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    align-items: start;
     gap: 10px;
+}
+.homePage .homeHero .heroHeading .heroheadingLeft .herosectionH1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0px;
+}
+.homePage .homeHero .heroHeading .heroheadingLeft h1{
+    line-height: 50px;
     font-size: 50px;
+    width: 100%;
+}
+.homePage .homeHero .heroHeading .heroheadingLeft h1 span{
+    color: greenyellow;
+    font-family: cursive;
+
+    position: relative;
+}.homePage .homeHero .heroHeading .heroheadingLeft .herosectionH1 h1:nth-child(2) span{
+    background-color: rgba(255, 255, 255, 0.187);
+    border-radius: 30px;
+    padding: 0px 5px;
+    font-size: 60px;
+    font-weight: 100;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: 70px;
 
 }
-.homePage .homeHero .homeHeroHeading div span{
+.homePage .homeHero .heroHeading .heroheadingLeft .herosectionH1 h1 span .headingicon{
+    position: absolute;
+    font-size: 25px;
+    color: greenyellow;
+    border-radius: 50%;
+    background-color: rgb(117, 117, 117);
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: rgba(255, 255, 255, 0.134); */
-    border-radius: 20px;
-    padding: 5px 10px;
-    cursor: pointer;
-    /* color: greenyellow; */
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    opacity: 0;
+    transition: all 0.3s ease;
 
-    background: linear-gradient(to left, white, greenyellow);
-    -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-    
+
+ }
+.homePage .homeHero .heroHeading .heroheadingLeft .herosectionH1 h1 span .headingicon:nth-child(1){
+    right: 20px;
+    bottom: -30px;
+    border-top-left-radius: 0px;
+    transform: translateX(20px);
 }
-.homePage .homeHero .homeHeroHeading div span:nth-child(2){
-    background: linear-gradient(to left, white, rgb(83, 3, 188));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+.homePage .homeHero .heroHeading .heroheadingLeft .herosectionH1 h1 span .headingicon:nth-child(2){
+    left: 0px;
+    top: -20px;
+    border-bottom-right-radius: 0px;
+    transform: translateX(-20px);
 }
-.homePage .homeHero .homeHeroHeading div span:nth-child(3){
-    background: linear-gradient(to left, white, rgb(13, 112, 218));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+.homePage .homeHero .heroHeading .heroheadingLeft .herosectionH1 h1 span .headingicon:nth-child(3){
+    right: 0px;
+    top: -20px;
+    border-bottom-left-radius: 0px;
+    transform: translateY(-20px);
 }
+ 
+
+.homePage .homeHero .heroHeading .heroheadingLeft .herosectionH1 h1:nth-child(2) span:hover .headingicon{
+    transform: translate(0px);
+    opacity: 1;
+}
+
 
 .homePage .homeHero .heroMid{
     width: 90%;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     gap: 30px;
 }
@@ -159,23 +202,51 @@
 .HomeherosectionAnimation{
     width: 90%;
     margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid rgba(172, 255, 47, 0.216);
+    border-bottom: 1px solid rgba(172, 255, 47, 0.216);
+    
 }
 
+/* .homeRuslut */
 .homePage .homeRuslut{
     width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: end;
+    align-items: center;
+    gap: 20px;
+}
+.homePage .homeRuslut .resultHeading{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     gap: 20px;
 }
 
+.homePage .homeRuslut .resultHeading .resultHeadingleftImg{
+    width: 40%;
+    aspect-ratio: 12/9;
+    background-image: url(../../assets/resultimg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.resultHeadingRightSec{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+
 .homePage .homeRuslut h1{
-    width: 60%;
+    /* width: 60%; */
     font-size: 40px;
 }
 .homePage .homeRuslut .homeRuslut2ndSection{
-    width: 60%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -198,7 +269,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 10px;
+    gap: 30px;
     padding: 40px;
 }
 .homePage .homeRuslut .homeRuslut3rdSection div{
@@ -206,10 +277,15 @@
     flex-direction: column;
     justify-content: center;
     gap: 10px;
+    position: relative;
+}
+.homePage .homeRuslut .homeRuslut3rdSection div:hover h4{
+    color: white;
 }
 .homePage .homeRuslut .homeRuslut3rdSection div h4{
-    font-size: 50px;
+    font-size: 60px;
     color: rgb(113, 112, 112);
+    transition: all 0.3s ease;
 }
 .homePage .homeRuslut .homeRuslut3rdSection div h3{
     font-size: 16px;
@@ -218,6 +294,42 @@
     color: rgb(109, 107, 107);
     width: 200px;
 }
+
+.homePage .homeRuslut .homeRuslut3rdSection .firstsec span{
+    position: absolute;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    font-size: 15px;
+}
+.homePage .homeRuslut .homeRuslut3rdSection .firstsec span:nth-child(1){
+    left: -50px;
+    top: -30px;
+    transform: rotate(-10deg);
+    background-color: #61DAFB;;
+}
+.homePage .homeRuslut .homeRuslut3rdSection .firstsec span:nth-child(2){
+    right: -30px;
+    top: -30px;
+    transform: rotate(60deg);
+    background-color: #339933;
+    border: 1px solid white;
+    /* z-index: 1; */
+}
+.homePage .homeRuslut .homeRuslut3rdSection .firstsec span:nth-child(3){
+    right: 50px;
+    top: -60px;
+    background-color: #47A248;
+    color: white;
+    border: 1px solid white;
+}
+
 
 .homePage .homeServies{
     width: 100%;
@@ -1104,3 +1216,44 @@
         z-index: -1;
     }
 }
+
+@media (max-width: 768px){
+    /* heroSection */
+    .heroheadingrightImg{
+        display: none;
+    }
+
+.homePage .homeHero .heroHeading .heroheadingLeft {
+    gap: 0px;
+}
+.homePage .homeHero .heroHeading .heroheadingLeft .herosectionH1{
+    margin-top: 10px;
+    gap: 0px;
+}
+.homePage .homeHero .heroHeading .heroheadingLeft .herosectionH1 h1{
+    font-size: 35px;
+    margin-bottom: 1px;
+}
+.homePage .homeHero .heroHeading .heroheadingLeft .herosectionH1 h1:nth-child(2) span{
+    font-size: 35px;
+    background-color: transparent;
+    height: fit-content;
+}
+
+.homePage .homeHero .heroHeading .heroheadingLeft .herosectionH1 h1:nth-child(2) span .headingicon{
+    display: none;
+}
+.homePage .homeHero .heroHeading .heroheadingLeft .heroMid{
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+.homePage .homeHero .heroHeading .heroheadingLeft .heroMid .heromidItem{
+    width: fit-content;
+}
+
+
+
+}
+
+

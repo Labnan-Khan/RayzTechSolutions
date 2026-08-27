@@ -11,8 +11,23 @@ function Navbar() {
     const [clickMenu, setClickMenu] = useState(false)
     const [dropMenu, setDropMenu] = useState(false)
     
+    const [navbarHeading, setNavbarHeading] = useState("RayzTechSolutions")
+    useEffect(()=>{
+        const handleResize =()=>{
 
-    
+            if(window.innerWidth <= 768){
+                setNavbarHeading("RTS")
+            }else{
+                setNavbarHeading("RayzTechSolutions")
+            }
+        }
+        
+        handleResize();
+        window.addEventListener("resize", handleResize);
+        return()=>{
+            window.removeEventListener("resize", handleResize);
+        }
+    },[])
 
 
     useEffect(()=>{
@@ -44,7 +59,7 @@ function Navbar() {
 
   return (
     <div className={`navbar`}>
-      <h1 className='navbarH1'>RayzTechSolutions</h1>
+      <h1 className='navbarH1'>{navbarHeading}</h1>
       <div className='navbarMain'>
         <ul  className={`navLi ${(dropMenu)? " navLiM" : ""}`} onClick={ ()=>{ setClickMenu(!clickMenu); setDropMenu(!dropMenu)} }>
             <li>

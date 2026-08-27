@@ -2,30 +2,30 @@ import React from 'react'
 import './homepage.css'
 import HeroSectionAnimation from '../heroSectionAnimation/HeroSectionAnimation'
 import { IoMdArrowForward } from 'react-icons/io'
-import { FaArrowLeft, FaArrowRight, FaLinkedinIn, FaStar } from 'react-icons/fa'
+import { FaArrowLeft, FaArrowRight, FaLinkedinIn, FaMobileAlt, FaNodeJs, FaReact, FaStar } from 'react-icons/fa'
 import { DiReact } from 'react-icons/di'
 import { AiOutlineJavaScript } from 'react-icons/ai'
 import { SiDevelopmentcontainers, SiMongodb } from 'react-icons/si'
 import { GoArrowRight } from 'react-icons/go'
+import { RiStackFill } from 'react-icons/ri'
+import { TiThLargeOutline } from 'react-icons/ti'
+import { BiLogoMongodb } from 'react-icons/bi'
 function HomePage() {
   return (
     <div className='homePage'>
 
       <div className='homeHero'>
-        
-        <p>Digital Product Design And Development Company</p>
-        <div className='homeHeroHeading'>
-          <h1>Your design & dev partner that unites,,</h1>
-          <div>
-            <span>brand</span>
-            <span>website</span>
-            <span>ui,/ux design</span>
+
+        <div className='heroHeading'>
+          <div className='heroheadingLeft'>
+          <p>Digital Product Design And Development Company</p>
+          <div className='herosectionH1'>
+            <h1>From idea to <span>launch</span>,</h1>
+            <h1> we build <span>websites  <span className='headingicon'><RiStackFill /></span> <span className='headingicon'><FaMobileAlt /></span> <span className='headingicon'><TiThLargeOutline /></span></span></h1>
+            <h1>that <span>perform</span>.</h1>
           </div>
-          <h1>into a holistic product</h1>
 
-        </div>
-
-        <div className='heroMid'>
+          <div className='heroMid'>
 
             <div className='heromidItem'>
               <p>{"{/}"}</p>
@@ -44,8 +44,10 @@ function HomePage() {
               <button>Book a Call</button>
             </div>
 
+          </div>
+          </div>
+          <div className='heroheadingrightImg'></div>
         </div>
-
         <div className='HomeherosectionAnimation'>
           <HeroSectionAnimation/>
         </div>
@@ -53,10 +55,12 @@ function HomePage() {
       </div>
 
       <div className='homeRuslut'>
+        <div className='resultHeading'>
+          <div className='resultHeadingleftImg'></div>
+          <div className='resultHeadingRightSec'>
+            <h1>Arounda is your perfect choice in terms of</h1>
 
-        <h1>Arounda is your perfect choice in terms of</h1>
-
-        <div className='homeRuslut2ndSection'>
+            <div className='homeRuslut2ndSection'>
 
           <div>
             <span>{"{/}"}</span>
@@ -74,11 +78,16 @@ function HomePage() {
             <p>Flexible collaboration & fixed monthly rate</p>
           </div>
 
+            </div>
+          </div>
         </div>
 
         <div className='homeRuslut3rdSection'>
           
-          <div>
+          <div className='firstsec'>
+            <span><FaReact /> Reactjs</span>
+            <span><FaNodeJs />Nodejs</span>
+            <span><BiLogoMongodb />Mongodb</span>
             <h4>+170%</h4>
             <h3>Engagement Rate</h3>
             <p>ntuitive flows that turn clicks into leads</p>

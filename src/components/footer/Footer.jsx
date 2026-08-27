@@ -6,22 +6,37 @@ import { FaInstagram, FaLinkedinIn } from 'react-icons/fa'
 function Footer() {
   return (
     <div className='footer'>
-        <h1>RayzTechSolutions</h1>
-        <p>some text i will write here for the p tag some text i will write here for the p tag</p>
-        <div>
-            <span><SiGmail /></span>
-            <span><IoLogoWhatsapp /></span>
-            <span><FaLinkedinIn /></span>
-            <span><FaInstagram /></span>
+        <div  className='footerHeading'>
+            <div>
+                <h1>RayzTechSolutions</h1>
+                <p>We build modern digital solutions that help businesses grow, connect, and succeed.</p>
+            </div>
+            <div className='fhrightSec'>
+                <div>
+                    <span><SiGmail /></span>
+                    <span><IoLogoWhatsapp /></span>
+                    <span><FaLinkedinIn /></span>
+                    <span><FaInstagram /></span>
+                </div>
+                <form action="">
+                    <input type='email' placeholder='XYZ@gmail.com' />
+                    <button>Subscribe</button>
+                </form>
+            </div>
+        </div>
+        
+        <div className='footerbottom'>
+
+            <p>© 2026 RayzTechSolutions All Rights Reserved</p>
+            
+            <div>
+                <p>Privacy Policy</p>
+                <p>Terms</p>
+                <p>Refund Policy</p>
+            </div>
             
         </div>
-
-        <p>© 2026 RayzTechSolutions All Rights Reserved</p>
-        <div>
-            <p>Privacy Policy</p>
-            <p>Terms</p>
-            <p>Refund Policy</p>
-        </div>
+        
     </div>
   )
 }
