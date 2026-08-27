@@ -1339,6 +1339,7 @@
 }
 .homePage .homeAboutUs .homeAboutUsHeading div:nth-child(2) div:nth-child(1) {
  left: -40px;
+ display: none;
 }
 .homePage .homeAboutUs  .homeAboutUs2ndSec{
     flex-wrap: wrap;
