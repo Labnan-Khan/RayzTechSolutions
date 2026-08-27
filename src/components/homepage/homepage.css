@@ -1252,7 +1252,72 @@
     width: fit-content;
 }
 
+ /* .homeRuslut */
+.homePage .homeRuslut .resultHeading .resultHeadingleftImg{
+    display: none;
+}
+.homePage .homeRuslut .resultHeading .resultHeadingRightSec{
+    width: 100%;
+}
 
+.homePage .homeRuslut  .homeRuslut3rdSection{
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    width: 100%;
+    gap: 50px;
+    padding: 0px;
+    margin-top: 20px;
+}
+.homePage .homeRuslut  .homeRuslut3rdSection div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0px;
+    width: fit-content;
+}
+.homePage .homeRuslut  .homeRuslut3rdSection div h4{
+    font-size: 20px;
+    color: white;
+    padding: 0px;
+}
+.homePage .homeRuslut  .homeRuslut3rdSection div h3{
+    font-size: 10px;
+    color: rgb(157, 154, 154);
+}
+.homePage .homeRuslut  .homeRuslut3rdSection div p{
+    display: none;
+} 
+.homePage .homeRuslut  .homeRuslut3rdSection .firstsec{
+ width: fit-content;
+
+}
+/* homeServies */
+
+
+.homePage .homeServies h1{
+    width: 90%;
+    font-size: 30px;
+}
+.homePage .homeServies .homeServiesSection{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.homePage .homeServies .homeServiesSection .homeDesignSection,.homePage .homeServies .homeServiesSection .homeDevelopSection{
+    width: 100%;
+}
+.homePage .homeServies .homeserviesBtnSection{
+    width: 90%;
+    display: flex;
+}
+
+.homePage .homeServies .homeserviesBtnSection p{
+    /* font-size: 16px; */
+    width: 100%;
+}
 
 }
 

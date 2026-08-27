@@ -55,6 +55,7 @@ function HomePage() {
       </div>
 
       <div className='homeRuslut'>
+
         <div className='resultHeading'>
           <div className='resultHeadingleftImg'></div>
           <div className='resultHeadingRightSec'>
@@ -85,9 +86,9 @@ function HomePage() {
         <div className='homeRuslut3rdSection'>
           
           <div className='firstsec'>
-            <span><FaReact /> Reactjs</span>
+            {/* <span><FaReact /> Reactjs</span>
             <span><FaNodeJs />Nodejs</span>
-            <span><BiLogoMongodb />Mongodb</span>
+            <span><BiLogoMongodb />Mongodb</span> */}
             <h4>+170%</h4>
             <h3>Engagement Rate</h3>
             <p>ntuitive flows that turn clicks into leads</p>
@@ -106,6 +107,7 @@ function HomePage() {
           </div>
 
         </div>
+
       </div>
 
       <div className='homeServies'>
