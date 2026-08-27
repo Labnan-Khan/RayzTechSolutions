@@ -110,3 +110,14 @@
     align-items: center;
     gap: 10px;
 }
+
+@media (max-width:768px) {
+    .footer .footerHeading{
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    .footer .footerbottom{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
