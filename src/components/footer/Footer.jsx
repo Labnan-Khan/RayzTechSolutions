@@ -16,7 +16,7 @@ function Footer() {
             
         </div>
 
-        <p>© 2026 Rayzmedia All Rights Reserved</p>
+        <p>© 2026 RayzTechSolutions All Rights Reserved</p>
         <div>
             <p>Privacy Policy</p>
             <p>Terms</p>
