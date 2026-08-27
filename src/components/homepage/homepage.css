@@ -1356,6 +1356,52 @@
     align-items: center;
 }
 
+/* homepageAchivment */
+.homePage .homepageAchivment{
+    width: 90%;
+}
+.homePage .homepageAchivment h1{
+    font-size: 35px;
+    width: 100%;
+    text-align: center;
+}
+.homePage .homepageAchivment .homeachivSection{
+    grid-template-columns: repeat(2, 1fr);
+}
+/* homepageReviews */
+.homePage .homepageReviews{
+    width: 90%;
+}
+.homePage .homepageReviews h1{
+    font-size: 35px;
+    width: 100%;
+}
+.homePage .homepageReviews .reviewSection{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 0px;
+}
+.homePage .homepageReviews .reviewSection .reviewLeftSec{
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.homePage .homepageReviews .reviewSection .reviewLeftSec div{
+    font-size: 20px;
+    height: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+}
+.homePage .homepageReviews .reviewSection .reviewRightSec{
+    width: 100%;
+    background-color: #339933;
+}
+
 
 }
 
