@@ -68,3 +68,13 @@ a{
     }
 }
 
+button {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:focus,
+button:active {
+  outline: none;
+}
+
