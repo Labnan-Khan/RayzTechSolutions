@@ -68,13 +68,13 @@ a{
     }
 }
 
-button {
+button,div,a,span {
   outline: none;
   -webkit-tap-highlight-color: transparent;
 }
 
-button:focus,
-button:active {
+button:focus,span:focus,a:focus,div:focus
+button:active,span:active,a:active,div:active {
   outline: none;
 }
 
