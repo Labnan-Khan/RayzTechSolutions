@@ -1,0 +1,300 @@
+.projectPage{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+.projectPage .projectypeBtnSec{
+    /* min-width: 350px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 30px;
+    padding: 40px;
+    padding-top: 0px;
+}
+.projectPage .projectypeBtnSec div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.projectPage .projectypeBtnSec div span{
+    display: flex;
+    width: 100%;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    &:hover{
+        color: greenyellow;
+    }
+}
+.projectPage .projectypeBtnSec div span:nth-child(1){
+    color: greenyellow;
+}
+.projectPage .projectypeBtnSec div p{
+    color: rgb(98, 97, 97);
+    font-size: 15px;
+    /* border-top: 1px solid rgba(255, 255, 255, 0.116); */
+    padding-top: 10px;
+}
+.projectPage .projectypeBtnSec div button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    display: flex;
+    width: fit-content;
+    font-size: 17px;
+    &:hover{
+        color: greenyellow;
+    }
+}
+.projectPage .projectypeBtnSec > button{
+    width: 150px;
+}
+
+.projectPage .projectRight{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-right: 30px;
+}
+.projectPage .projectRight h1 span,.projectPage .projectypeBtnSec h1 span{
+    color: greenyellow;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.projectPage .projectRight .ProjectSec{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.projectPage .projectRight .ProjectSec .PeojectItem{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 30px;
+    background-color: rgba(78, 77, 77, 0.329);
+    overflow: hidden;
+    border: 1px solid rgb(93, 92, 92);
+    transition: all 0.3s ease;
+    &:hover{
+        border: 1px solid greenyellow;
+    }
+}
+.projectPage .projectRight .ProjectSec .PeojectItem .topRow{
+    width: 100%;
+    padding: 10px 20px;
+    padding-bottom: 0px;
+    display: flex;
+    gap: 20px;
+    border-bottom: 1px solid rgb(69, 68, 68);
+}
+.projectPage .projectRight .ProjectSec .PeojectItem .topRow div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    gap: 5px;
+}
+.projectPage .projectRight .ProjectSec .PeojectItem .topRow div span{
+    display: flex;
+    width: 15px;
+    aspect-ratio: 9/9;
+    border-radius: 50%;
+    background-color: rgba(255, 0, 0, 0.694);
+}
+.projectPage .projectRight .ProjectSec .PeojectItem .topRow div:nth-child(1) span:nth-child(2){
+    background-color: rgba(255, 255, 0, 0.654);
+}
+.projectPage .projectRight .ProjectSec .PeojectItem .topRow div:nth-child(1) span:nth-child(3){
+    background-color: rgba(1, 248, 1, 0.744);
+}
+.projectPage .projectRight .ProjectSec .PeojectItem .topRow div:nth-child(2),
+.projectPage .projectRight .ProjectSec .PeojectItem .topRow div:nth-child(3){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid rgb(74, 73, 73);
+    border-bottom: 0px;
+    padding: 5px;
+    border-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.projectPage .projectRight .ProjectSec .PeojectItem .topRow div:nth-child(2) span{
+    background-color: rgb(1, 246, 1);
+    width: 7px;
+}
+.projectPage .projectRight .ProjectSec .PeojectItem .topRow div:nth-child(2) h3{
+    font-size: 16px;
+    color: rgb(107, 3, 242);
+    font-weight: 100;
+}
+.projectPage .projectRight .ProjectSec .PeojectItem .topRow div:nth-child(3){
+    font-size: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 100;
+}
+.projectPage .projectRight .ProjectSec .PeojectItem .projectnameSec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    background-color: black;
+}
+.projectPage .projectRight .ProjectSec .PeojectItem .projectnameSec h2{
+    color: white;
+    font-size: 40px;
+    font-weight: 100;
+}
+.projectPage .projectRight .ProjectSec .PeojectItem .bottomRow{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.projectPage .projectRight .ProjectSec .PeojectItem .bottomRow div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.projectPage .projectRight .ProjectSec .PeojectItem .bottomRow div p{
+    color: rgb(122, 120, 120);
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.3s ease;
+}
+.projectPage .projectRight .ProjectSec .PeojectItem .bottomRow div:nth-child(1) span{
+    background-color: rgb(3, 246, 3);
+    aspect-ratio: 9/9;
+    display: flex;
+    width: 5px;
+    border-radius: 50%;
+}
+
+.projectPage .projectRight .ProjectSec .PeojectItem:hover .bottomRow div:nth-child(2) p{
+    color: greenyellow;
+}
+.projectPage .projectRight .ProjectSec .PeojectItem .bottomRow div:nth-child(2) p span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+.projectPage .projectRight h1{
+    display: flex;
+}
+
+.projectPage .projectypeBtnSec h1{
+    display: none;
+}
+
+@media (min-width: 950px) and (max-width: 1300px) {
+    
+
+   .projectPage .projectRight .ProjectSec{
+    grid-template-columns: repeat(2,1fr);
+   }
+        
+} 
+@media (min-width: 765px) and (max-width: 950px) {
+    
+
+   .projectPage .projectRight .ProjectSec{
+    grid-template-columns: 1fr;
+   }
+        
+} 
+@media (max-width: 765px){
+
+    .projectPage .projectRight h1{
+        display: none;
+    }
+.projectPage .projectypeBtnSec h1{
+    display: block;
+    font-size: 40px;
+    text-align: center;
+}
+
+    .projectPage{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .projectPage .projectypeBtnSec {
+        width: 90%;
+        padding: 0px;
+    }
+    .projectPage .projectypeBtnSec div{
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        /* flex-wrap: wrap; */
+        width: 100%;
+    }
+    .projectPage .projectypeBtnSec div:nth-child(1){
+        flex-wrap: wrap;
+    }
+    .projectPage .projectypeBtnSec div:nth-child(1) span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+        border: 1px solid white;
+        border-radius: 30px;
+        padding: 10px;
+        &:hover{
+            border: 1px solid greenyellow;
+        }
+    }
+    .projectPage .projectypeBtnSec div:nth-child(1) span:nth-child(1){
+        color: greenyellow;
+        border: 1px solid greenyellow;
+    }
+    .projectPage .projectypeBtnSec > button {
+        width: 100%;
+    }
+
+    
+.projectPage .projectRight {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin-top: 20px;
+}
+.projectPage .projectRight .ProjectSec{
+    /* width: 90%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+    
+}

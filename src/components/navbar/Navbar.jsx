@@ -12,7 +12,7 @@ function Navbar() {
     const [clickMenu, setClickMenu] = useState(false)
     const [dropMenu, setDropMenu] = useState(false)
     
-    const [navbarHeading, setNavbarHeading] = useState("RayzTechSolutions")
+    const [navbarHeading, setNavbarHeading] = useState("")
     useEffect(()=>{
         const handleResize =()=>{
 

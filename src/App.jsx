@@ -6,6 +6,7 @@ import ContactUs from './components/contactUs/ContactUs'
 import Price from './components/price/Price'
 import Servie from './components/service/Servie'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Project from './components/projects/Project'
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
       <Routes>
         <Route path="/" element= {<HomePage />} />
         <Route path="/services" element= {<Servie />} />
-        <Route path="/Price" element= {<Price />} />
+        <Route path="/project" element= {<Project/>} />
+        <Route path="/price" element= {<Price />} />
         <Route path="/contactUs" element= {<ContactUs />} />
       
       
