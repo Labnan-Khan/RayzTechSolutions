@@ -87,7 +87,7 @@
     transition: all 0.3s ease;
 }
 .navbar .navbarContactUs{
-    height: 80%;
+    height: 65px;
     width: 170px;
     color: black;
     display: flex;
@@ -98,9 +98,7 @@
     border-radius: 30px;
     cursor: pointer;
     position: relative;
-    &:hover{
-        /* background-color: transparent; */
-    }
+    
 
 }
 .navbar .navbarContactUs::before{
@@ -327,10 +325,11 @@
         opacity: 0;
         overflow: hidden;
         border-bottom-left-radius: 30px;
+        /* border-top-left-radius: 30px; */
         transition: all 0.3s ease;
         border: 1px solid rgb(172, 255, 47);
         border-right: 0px;
-        border-top: 0px;
+        /* border-top: 0px; */
     }
     .navbar .navLiM{
         width: 250px;

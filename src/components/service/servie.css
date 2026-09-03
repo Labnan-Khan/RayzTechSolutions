@@ -1,0 +1,535 @@
+.service {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 120px;
+    padding: 40px 0px;
+}
+.service h1 span{
+    color: greenyellow;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+
+}
+.service .serviceHeroSec{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.service .serviceHeroSec .sHerotopSec{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.service .serviceHeroSec .sHerotopSec .svideoSec{
+    width: 30%;
+    aspect-ratio: 9/9;
+    background-image: url(../../assets/heroimg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: aqua;
+    border: 1px solid white;
+}
+.service .serviceHeroSec .sHerotopSec .stopLeftSec{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.service .serviceHeroSec .sHerotopSec .stopLeftSec h1{
+    font-size: 65px;
+    font-weight: 400;
+}
+.service .serviceHeroSec .sHerotopSec .stopLeftSec .stTopRow{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.service .serviceHeroSec .sHerotopSec .stopLeftSec .stTopRow span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 10px;
+    background-color: rgba(166, 165, 165, 0.23);
+    border-radius: 30px;
+}
+.service .serviceHeroSec .sHerotopSec .stopLeftSec .stBottomRow{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.service .serviceHeroSec .sHerotopSec .stopLeftSec .stBottomRow div{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.service .serviceHeroSec .sHerotopSec .stopLeftSec .stBottomRow div button:first-child{
+    background-color: greenyellow;
+    &::after{
+        background-color: white;
+    }
+}
+.service .serviceHeroSec .sHerotopSec .stopLeftSec .stBottomRow div p{
+    color: rgb(155, 153, 153);
+    margin-left: 10px;
+}
+.service .serviceHeroSec .sHerotopSec .stopLeftSec .stBottomRow div span{
+    display: flex;
+    font-size: 20px;
+    color: rgb(255, 213, 0);
+
+}
+
+.service .serviceHeroSec .sHeroBSec{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    border: 1px solid rgba(172, 255, 47, 0.354);
+    padding: 30px;
+    margin-top: 30px;
+    border-radius: 30px;
+    /* background-color: rgba(172, 255, 47, 0.12); */
+    box-shadow: inset 0px 0px 20px rgb(172, 255, 47);
+
+}
+.service .serviceHeroSec .sHeroBSec div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+.service .serviceHeroSec .sHeroBSec div h3{
+    font-size: 40px;
+}
+.service .serviceHeroSec .sHeroBSec div p{
+    color: rgb(128, 127, 127);
+}
+
+/* ourPromise */
+.service .ourPromise{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.service .ourPromise h1{
+    text-align: center;
+}
+.service .ourPromise .ourPromiseSec{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: "item1 item2 item2"
+                         "item3 item4 item5";
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.service .ourPromise .ourPromiseSec span{
+    font-size: 30px;
+    color: greenyellow;
+}
+.service .ourPromise .ourPromiseSec > div{
+    min-height: 300px;
+    background-color: rgba(145, 144, 144, 0.187);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 40px;
+}
+.service .ourPromise .ourPromiseSec > div div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.service .ourPromise .ourPromiseSec > div div h3{
+    font-size: 25px;
+    font-weight: 100;
+    color: rgb(255, 255, 255);
+}
+.service .ourPromise .ourPromiseSec > div:nth-child(2) div p{
+    width: 50%;
+}
+.service .ourPromise .ourPromiseSec > div div p{
+    color: rgb(142, 140, 140);
+}
+
+.service .ourPromise .ourPromiseSec > div:nth-child(1){
+    grid-area: item1;
+}
+.service .ourPromise .ourPromiseSec > div:nth-child(2){
+    grid-area: item2;
+    
+}
+.service .ourPromise .ourPromiseSec > div:nth-child(3){
+    grid-area: item3;
+}
+.service .ourPromise .ourPromiseSec > div:nth-child(4){
+    grid-area: item4;
+}
+.service .ourPromise .ourPromiseSec > div:nth-child(5){
+    grid-area: item5;
+    background-image: url(../../assets/Servicegirditem5thImg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid rgba(133, 131, 131, 0);
+}
+
+
+
+
+
+
+
+/* ourProcess */
+.service .ourProcess{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.service .ourProcess > p{
+    text-align: center;
+    width: 70%;
+    font-size: 20px;
+}
+.service .ourProcess h1{
+    text-align: center;
+}
+.service .ourProcess .ourProcessSec{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: "item1 item2 item3"
+                         "item4 ite5 item6";
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.service .ourProcess .ourProcessSec div{
+    min-height: 150px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
+    background-color: rgba(185, 255, 80, 0.089);
+    border: 1px solid rgba(172, 255, 47, 0.158);
+    padding: 20px;
+}
+
+.service .ourProcess .ourProcessSec  div h3{
+    font-size: 17px;
+    font-weight: 100;
+    color: greenyellow;
+}
+
+.service .ourProcess .ourProcessSec div p{
+    color: rgb(142, 140, 140);
+}
+
+.service .ourPromise .ourPromiseSec > div:nth-child(1){
+    grid-area: item1;
+}
+.service .ourPromise .ourPromiseSec > div:nth-child(2){
+    grid-area: item2;
+    
+}
+.service .ourPromise .ourPromiseSec > div:nth-child(3){
+    grid-area: item3;
+}
+.service .ourPromise .ourPromiseSec > div:nth-child(4){
+    grid-area: item4;
+}
+.service .ourPromise .ourPromiseSec > div:nth-child(5){
+    grid-area: item5;
+}
+.service .ourPromise .ourPromiseSec > div:nth-child(6){
+    grid-area: item6;
+}
+/* advantage */
+.service .advantage{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px
+}
+.service .advantage h1{
+    text-align: center;
+}
+.service .advantage > p{
+    width: 50%;
+    text-align: center;
+}
+.service .advantage .advantageSec{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.service .advantage .advantageSec > div{
+    background-color: rgba(128, 128, 128, 0.23);
+    border-radius: 30px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.service .advantage .advantageSec > div > p{
+    color: rgb(147, 146, 146);
+
+}
+.service .advantage .advantageSec > div h3{
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.service .advantage .advantageSec > div div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+.service .advantage .advantageSec > div div p{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.238);
+    padding: 10px 0px; 
+}
+.service .advantage .advantageSec > div div p:last-child{
+    border-bottom: none;
+    padding-bottom: 0px;
+}
+
+/* weOffer */
+.service .weOffer{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.service .weOffer > p{
+    width: 50%;
+    text-align: center;
+}
+.service .weOffer h1{
+    text-align: center;
+}
+
+.service .weOffer .weOfferSec{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.service .weOffer .weOfferSec > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+    padding: 20px;
+}
+.service .weOffer .weOfferSec > div h2{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.771);
+    width: 100%;
+    padding-bottom: 20px;
+    padding-left: 20px;
+
+}
+.service .weOffer .weOfferSec > div div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+/* stack */
+.service .stack{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.service .stack h1{
+    text-align: center;
+}
+.service .stack .stackSec{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.service .stack .stackSec div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.service .stack .stackSec div span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(126, 125, 125, 0.364);
+    font-size: 40px;
+    padding: 15px 10px;
+    border-radius: 10px;
+}
+.service .stack .stackSec p{
+    font-size: 20px;
+}
+
+.service .stack .stackSec > div:nth-child(1) > span {
+    color: #E34F26;
+}
+
+.service .stack .stackSec > div:nth-child(2) > span {
+    color: #1572B6;
+}
+
+.service .stack .stackSec > div:nth-child(3) > span {
+    color: #F7DF1E;
+}
+
+.service .stack .stackSec > div:nth-child(4) > span {
+    color: #61DAFB;
+}
+
+.service .stack .stackSec > div:nth-child(5) > span {
+    color: #339933;
+}
+
+.service .stack .stackSec > div:nth-child(6) > span {
+    color: #FFFFFF;
+}
+
+.service .stack .stackSec > div:nth-child(7) > span {
+    color: #47A248;
+}
+
+/* faq */
+.service .faq{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 90%;
+}
+.service .faq h1{
+    text-align: center;
+}
+.service .faq .faqrightSec{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.service .faq .faqrightSec .questionItem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    background-color: rgba(66, 65, 65, 0.487);
+    border-radius: 30px;
+}
+.service .faq .faqrightSec .questionItem .questionHeading{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    cursor: pointer;
+}
+.service .faq .faqrightSec .questionItem .questionHeading span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    transition: all 0.2s ease;
+    transform: rotate(0deg);
+}
+.service .faq .faqrightSec .questionItem .questionHeading:hover span{
+    color: greenyellow;
+}
+.service .faq .faqrightSec .questionItem .questionHeading h3{
+    font-size: 20px;
+    color: white;
+}
+.service .faq .faqrightSec .questionItem .questionHeading:hover h3{
+    color: greenyellow;
+}
+.service .faq .faqrightSec .questionItem .questionAnswer{
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    color: rgb(191, 189, 189);
+    transition: all 0.3s ease;
+    display: none;
+}
+.service .faq .faqrightSec .questionItem .questionAnswer p{
+    color: rgb(191, 189, 189);
+}
+.service .faq .faqrightSec .questionItem .questionAnswer span{
+    color: white;
+}
+.service .faq .faqrightSec .questionItem .questionAnswer ul{
+    list-style:inside;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.service .faq .faqrightSec .questionItem .questionAnswer ul li::marker {
+    color: white;
+    font-size: 20px;
+}
+
+.service .faq .faqrightSec .questionItem.openA .questionHeading span{
+    transform: rotate(90deg);
+}
+.service .faq .faqrightSec .questionItem.openA .questionAnswer{
+    display: flex;
+}

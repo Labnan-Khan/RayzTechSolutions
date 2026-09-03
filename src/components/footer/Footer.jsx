@@ -11,7 +11,7 @@ function Footer() {
                 <h1>RayzTechSolutions</h1>
                 <p>We build modern digital solutions that help businesses grow, connect, and succeed.</p>
             </div>
-            <div className='fhrightSec'>
+            <div className='fhrightSec'> 
                 <div>
                     <span><SiGmail /></span>
                     <span><IoLogoWhatsapp /></span>

@@ -1,0 +1,492 @@
+.pricePage{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    padding: 50px 0px;
+}
+/*pheroSec  */
+.pricePage .pheroSec{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.pricePage .pheroSec .pheroimg{
+    width: 40%;
+    aspect-ratio: 12/12;
+    background-image: url(../../assets/prcing-hero.avif);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.pricePage .pheroSec .pheroLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 35px;
+    width: 60%;
+}
+.pricePage .pheroSec .pheroLeft h1{
+    font-size: 65px;
+    font-weight: 200;
+}
+.pricePage  h1 span{
+    color: greenyellow;
+    font-family: Librebaskerville, "Times New Roman", sans-serif;
+    font-weight: 500;
+}
+
+/* priceOption */
+.pricePage .priceOption{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.pricePage .priceOption h1{
+    /* width: 50%; */
+    text-align: center;
+} 
+.pricePage .priceOption .priceOptionSection{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #ffffff14;
+    background: linear-gradient(#151515a3, #151515a3);
+    border-radius: 30px;
+    padding: 20px;
+}
+.pricePage .priceOption .priceOptionSection .switchOptionBtn{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.pricePage .priceOption .priceOptionSection .switchOptionBtn button{
+    background-color: rgba(255, 255, 255, 0.245);
+    width: 70px;
+    padding: 5px;
+    height: 45px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+}
+.pricePage .priceOption .priceOptionSection .switchOptionBtn button span{
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    width: 35px;
+    aspect-ratio: 9/9;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    transition: all 0.5s ease;
+}
+.pricePage .priceOption .priceOptionSection .switchOptionBtn button.isDevelopment span{
+    left: unset;
+    right: 5px;
+}
+.pricePage .priceOption .priceOptionSection .priceOptionDisplay{
+ width: 100%;
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ justify-content: center;
+ align-items: center;
+ gap: 20px;
+}
+.pricePage .priceOption .priceOptionSection .priceOptionDisplay .displayPriceItem{
+    background-color: rgba(96, 95, 95, 0.181);
+    padding: 20px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.pricePage .priceOption .priceOptionSection .priceOptionDisplay .displayPriceItem h3{
+    font-size: 20px;
+    color: white;
+}
+.pricePage .priceOption .priceOptionSection .priceOptionDisplay .displayPriceItem button{
+    width: 150px;
+}
+.pricePage .priceOption .priceOptionSection .priceOptionDisplay .displayPriceItem .displayPriceItemBottomSec{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.476);
+    padding-top: 20px;
+    margin-top: 10px;
+}
+.pricePage .priceOption .priceOptionSection .priceOptionDisplay .displayPriceItem .displayPriceItemBottomSec div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 17px;
+    color: white;
+}
+.pricePage .priceOption .priceOptionSection .priceOptionDisplay .displayPriceItem .displayPriceItemBottomSec div span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pricePage .priceOption .priceOptionSection .priceOptionDisplay .displayPriceItem .displayPriceItemBottomSec div p{
+    font-size: 15px;
+    font-weight: 100;
+}
+/* pComparison */
+.pricePage .pComparison{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.pricePage .pComparison div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    gap: 15px;
+}
+.pricePage .pComparison div h1{
+    font-size: 50px;
+}
+
+.pricePage .pComparison table{
+    width: 90%;
+    background-color: rgba(142, 142, 142, 0.166);
+    padding: 20px;
+    border-radius: 30px;
+    border-collapse: collapse;
+    color: white;
+}
+
+.pricePage .pComparison table thead tr th{
+    font-size: 14px;
+    text-align: center;
+    padding: 25px 20px;
+}
+.pricePage .pComparison table thead tr th:nth-child(2){
+    font-size: 20px;
+    color: greenyellow;
+}
+.pricePage .pComparison table thead tr th:first-child{
+    text-align: start;
+}
+.pricePage .pComparison table tr{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    
+}
+.pricePage .pComparison table tbody tr:last-child{
+    border-bottom: none;
+}
+.pricePage .pComparison table tbody td{
+    padding: 22px 20px;
+    font-size: 14px;
+    text-align: center;
+}
+.pricePage .pComparison table tbody td:first-child{
+    text-align: start;
+}
+
+.pricePage .pComparison table tbody tr span{
+    background-color: rgba(150, 149, 149, 0.616);
+    color: white;
+    padding: 4px;
+    border-radius: 50%;
+    font-size: 16px;
+    display: inline-flex;
+}
+.pricePage .pComparison table tbody tr span.check{
+    background-color: greenyellow;
+    color: black;
+    font-size: 17px;
+
+}
+
+/* saq */
+.pricePage .saq{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 30px;
+    width: 90%;
+    margin-top: 70px;
+}
+.pricePage .saq .faqforMobile{
+ display: none;
+}
+.pricePage .saq .saqLeftSec{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 40%;
+    position: relative;
+}
+.pricePage .saq .saqLeftSec h1{
+    position: absolute;
+    top: -60px;
+    left: 0px;
+}
+.pricePage .saq .saqLeftSec .saqleftFounder{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    background-color: white;
+    border-radius: 30px;
+    border-top-left-radius: 0px;
+    padding: 30px;
+}
+.pricePage .saq .saqLeftSec .saqleftFounder .founderSec{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.pricePage .saq .saqLeftSec .saqleftFounder .founderSec .founderimg{
+    display: flex;
+    width: 70px;
+    aspect-ratio: 9/9;
+    background-image: url(../../assets/founderimg.png);
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    border-radius: 50%;
+}
+.pricePage .saq .saqLeftSec .saqleftFounder .founderSec div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    color: black;
+    font-size: 18px;
+}
+.pricePage .saq .saqLeftSec .saqleftFounder .founderSec div p{
+    color: rgb(87, 87, 87);
+}
+.pricePage .saq .saqLeftSec .saqleftFounder p{
+    color: black;
+}
+.pricePage .saq .saqLeftSec .saqleftFounder button{
+    color: white;
+    background-color: black;
+    border: 1px solid transparent;
+    &:hover{
+        color: black;
+    }
+}
+.pricePage .saq .saqrightSec{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.pricePage .saq .saqrightSec .questionItem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    background-color: rgba(66, 65, 65, 0.487);
+    border-radius: 30px;
+}
+.pricePage .saq .saqrightSec .questionItem .questionHeading{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    cursor: pointer;
+}
+.pricePage .saq .saqrightSec .questionItem .questionHeading span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    transition: all 0.2s ease;
+    transform: rotate(0deg);
+}
+.pricePage .saq .saqrightSec .questionItem .questionHeading:hover span{
+    color: greenyellow;
+}
+.pricePage .saq .saqrightSec .questionItem .questionHeading h3{
+    font-size: 20px;
+    color: white;
+}
+.pricePage .saq .saqrightSec .questionItem .questionHeading:hover h3{
+    color: greenyellow;
+}
+.pricePage .saq .saqrightSec .questionItem .questionAnswer{
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    color: rgb(191, 189, 189);
+    transition: all 0.3s ease;
+    display: none;
+}
+.pricePage .saq .saqrightSec .questionItem .questionAnswer p{
+    color: rgb(191, 189, 189);
+}
+.pricePage .saq .saqrightSec .questionItem .questionAnswer span{
+    color: white;
+}
+.pricePage .saq .saqrightSec .questionItem .questionAnswer ul{
+    list-style:inside;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.pricePage .saq .saqrightSec .questionItem .questionAnswer ul li::marker {
+    color: white;
+    font-size: 20px;
+}
+
+.pricePage .saq .saqrightSec .questionItem.openA .questionHeading span{
+    transform: rotate(90deg);
+}
+.pricePage .saq .saqrightSec .questionItem.openA .questionAnswer{
+    display: flex;
+}
+
+/* pricePageLastDiv */
+.pricePage .pricePageLastDiv{
+    margin-top: 50px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 30px;
+    border-radius: 30px;
+    /* color: black;s */
+    background-color: rgba(128, 126, 126, 0.235);
+    box-shadow: inset 0px 0px 30px rgba(195, 192, 192, 0.12);
+
+}
+.pricePage .pricePageLastDiv p{
+    font-size: 30px;
+    color: rgb(200, 197, 197);
+}
+.pricePage .pricePageLastDiv h1{
+    font-size: 60px;
+    font-weight: 400;
+}
+
+
+@media (max-width: 765px){
+
+    /* pheroSec */
+    .pricePage .pheroSec{
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+    }
+    .pricePage .pheroSec .pheroLeft{
+        width: 100%;
+    }
+    .pricePage .pheroSec .pheroLeft h1{
+        font-size: 45px;
+    }
+    .pricePage .pheroSec .pheroimg{
+        width: 90%;
+    }
+    /*  .pComparison  */
+    .pricePage .pComparison{
+        width: 100%;
+        padding:  0px 10px;
+    }
+    .pricePage .pComparison div h1{
+        font-size: 36px;
+        text-align: center;
+        width: 100%;
+    }
+    .pricePage .pComparison table{
+        width: 100%;
+    }
+    .pricePage .pComparison table tr td:nth-child(4), .pricePage .pComparison table tr th:nth-child(4){
+        display: none;
+    }
+
+        /* faq */
+    .pricePage .saq{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .pricePage .saq .saqLeftSec{
+        display: none;
+    }
+
+    .pricePage .saq .faqforMobile{
+        display: flex;
+    }
+    .pricePage .saq .saqrightSec{
+        width: 100%;
+    }
+
+    /*  .pricePageLastDiv */
+
+    .pricePage .pricePageLastDiv {
+        width: 90%;
+    }
+    .pricePage .pricePageLastDiv h1{
+        font-size: 35px;
+
+    }
+    .pricePage .pricePageLastDiv p{
+        font-size: 20px;
+    }
+    
+    /* .priceOption  */
+    .pricePage .priceOption p.headingp{
+        text-align: center;
+    }
+    .pricePage .priceOption h1{
+        width: 100%;
+        text-align: center;
+
+    }
+    .pricePage .priceOption .priceOptionSection {
+        width: 100%;
+    }
+    .pricePage .priceOption .priceOptionSection .priceOptionDisplay{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+    }
+    .pricePage .priceOption .priceOptionSection .priceOptionDisplay .displayPriceItem{
+        width: 100%;
+    }
+}

@@ -3,6 +3,7 @@ import './navbar.css'
 import { FaArrowRight } from 'react-icons/fa'
 import { TbMenu2 } from 'react-icons/tb'
 import { CgMenuRight } from 'react-icons/cg'
+import { Link } from "react-router-dom";
 // import { MdKeyboardArrowDown } from 'react-icons/md'
 function Navbar() {
 
@@ -59,40 +60,54 @@ function Navbar() {
 
   return (
     <div className={`navbar`}>
-      <h1 className='navbarH1'>{navbarHeading}</h1>
+
+      <Link to="/"><h1 className='navbarH1'>{navbarHeading}</h1></Link>
       <div className='navbarMain'>
         <ul  className={`navLi ${(dropMenu)? " navLiM" : ""}`} onClick={ ()=>{ setClickMenu(!clickMenu); setDropMenu(!dropMenu)} }>
+            <Link to="/">
             <li>
-                <span className='beforeHover'>Works</span>
-                <span className='afterHover'>Works</span>
+                <span className='beforeHover'>Home</span>
+                <span className='afterHover'>Home</span>
             </li>
+            </Link>
+           
+            <Link to="/services">
+            <li>
+                <span className='beforeHover'>Services</span>
+                <span className='afterHover'>Services</span>
+            </li>
+            </Link>
             
+            <Link to="/project">
             <li>
-            {/* <li onMouseEnter={()=> setShowServies(true)} onMouseLeave={()=> setShowServies(false)}>
-                <span className='iconRotation'><MdKeyboardArrowDown /></span> */}
-                <span className='beforeHover'>Servies</span>
-                <span className='afterHover'>Servies</span>
+                <span className='beforeHover'>Projects</span>
+                <span className='afterHover'>Projects</span>
             </li>
-            <li>
-                {/* <span className='iconRotation'><MdKeyboardArrowDown /></span> */}
-                <span className='beforeHover'>Industries</span>
-                <span className='afterHover'>Industries</span>
-            </li>
-            <li>
+            </Link>
+
+            <Link to="/price">
+                <li>
                 <span className='beforeHover'>Pricing</span>
                 <span className='afterHover'>Pricing</span>
-            </li>
-            <li>
+                </li>
+            </Link>
+            
+            {/* <li>
                 <span className='beforeHover'>About</span>
                 <span className='afterHover'>About</span>
-            </li>
-            <li>
+            </li> */}
+
+            {/* <li>
                 <span className='beforeHover'>Blogs</span>
                 <span className='afterHover'>Blogs</span>
-            </li>
+            </li> */}
+
         </ul>
-      </div>
-      <div className='navbarContactUs'>Contact Us <span><FaArrowRight /></span></div>
+        </div>
+      
+        <Link to="/contactUs">
+            <div className='navbarContactUs'>Contact Us <span><FaArrowRight /></span></div>
+        </Link>
       <div  className='navMenu' onClick={ ()=>{ setClickMenu(!clickMenu); setDropMenu(!dropMenu)} }>{ (clickMenu)?  <CgMenuRight />:<TbMenu2 />}</div>
       <div className={`navbarrightAnimation ${(dropMenu)? " showNavbarrightAnimation" : ""}`} onClick={ ()=>{ setClickMenu(!clickMenu); setDropMenu(!dropMenu)} }></div>
       {/* <div className={`liServiesSection ${(showServies? "show" : "")}`}>
