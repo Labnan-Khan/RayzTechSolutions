@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     gap: 150px;
-
+    overflow: hidden;
     
 }
 .homePage .homeHero{
@@ -311,6 +311,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    text-align: center;
     gap: 10px;
     position: relative;
 }
@@ -564,16 +566,20 @@
 
 /* homeAboutUs */
 .homePage .homeAboutUs{
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
+    padding: 50px 0px;
+    color: black;
+    background-color: #cdfe2d;
 }
 
+
 .homePage .homeAboutUs .homeAboutUsHeading{
-    width: 100%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -582,10 +588,15 @@
 .homePage .homeAboutUs .homeAboutUsHeading div:nth-child(1){
     font-size: 30px;
 }
+.homePage .homeAboutUs   p{
+    color: rgb(49, 48, 48);
+}
+.homePage .homeAboutUs .homeAboutUsHeading div:nth-child(1) h1{
+    color: black;
+}
 .homePage .homeAboutUs .homeAboutUsHeading div:nth-child(1) span{
+    color: rgb(141, 5, 238);
     
-    color: greenyellow;
-    font-family: cursive;
 }
 
 .homePage .homeAboutUs .homeAboutUsHeading div:nth-child(2){
@@ -618,7 +629,8 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: rgba(172, 255, 47, 0.479);
+    background-color: rgba(141, 5, 238, 0.631);
+    border: 2px solid rgb(141, 5, 238);
 }
 .homePage .homeAboutUs .homeAboutUsHeading div:nth-child(2) div:nth-child(1){
     top: -20px;
@@ -640,7 +652,7 @@
 
 
 .homePage .homeAboutUs .homeAboutUs2ndSec{
-    width: 100%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -675,14 +687,11 @@
     cursor: pointer;
     position: relative;
     z-index: 2;
+    color: white;
+    background-color: black;
 
-    &::before{
-        position: absolute;
-        content: "";
-        inset: 0;
-        background-color: white;
-        z-index: -2;
-        border-radius: 30px;
+    &:hover{
+        color: black;
     }
     &::after{
         position: absolute;
@@ -691,7 +700,7 @@
         height: 100%;
         top: 0px;
         left: 0px;
-        background-color: greenyellow;
+        background-color: white;
         opacity: 0;
         border-radius: 30px;
         transition: all 0.3s ease;
@@ -707,10 +716,10 @@
 
 .homePage .homeAboutUs .homeAboutUs3ndSec{
     display: flex;
-    width: 100%;
+    width: 80%;
     justify-content: space-between;
     align-items: center;
-    border-top: 1px solid rgba(248, 248, 248, 0.228);
+    border-top: 1px solid black;
     padding-top: 30px;
     margin-top: 30px;
     gap: 30px;
@@ -781,10 +790,20 @@
     gap: 10px;
 }
 
+.homePage .homepageAchivment .homeachivSection .homeachivItem h3{
+    color: white;
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+}
+.homePage .homepageAchivment .homeachivSection .homeachivItem p{
+    color: rgb(113, 112, 112);
+    text-align: center;
+}
 .homePage .homepageAchivment .homeachivSection .homeachivItem{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
     /* aspect-ratio: 12/9; */
@@ -802,54 +821,24 @@
     }
 }
 .homePage .homepageAchivment .homeachivSection .homeachivItem div{
-    width: 100%;
-    aspect-ratio: 9/9;
-    background-image: url(../../assets/gridimgeg1.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.homePage .homepageAchivment .homeachivSection .homeachivItem:nth-child(1){
-    transition: all 0.3s ease;
-    &::before{
-        position: absolute;
-        width: 40px;
-        height: 40px;
-        background-color: greenyellow;;
-        z-index: -1;
-        border-radius: 50%;
-        bottom: 10px;
-        left: 10px;
-        content: "";
-        transition: all 0.3s ease;
-    }
-    &:hover::before{
-        width: 100%;
-        height: 100%;
-        border-radius: 20px;
-        bottom: 0px;
-        left: 0px;
-    }
-    &:hover{
-        color: black;
-        transform: scale(1);
-    }
-}
-.homePage .homepageAchivment .homeachivSection .homeachivItem:nth-child(1) span{
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    width: 40px;
-    aspect-ratio: 9/9;
+    
+    color: #cdfe2d;
+    font-size: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
-    color: black;
-    transform: rotate(-60deg);
-    
 }
+
+.homePage .homepageAchivment .homeachivSection .homeachivItem:last-child{
+    background-image: url(../../assets/rtsLogoImg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column: span 2;
+    min-height: 250px;
+}
+
+
 
 /* homepageReviews */
 .homePage .homepageReviews{
@@ -1249,7 +1238,7 @@
     text-align: center;
     gap: 20px;
     padding: 40px 20px;
-    background-color: white;
+    background-color: #cdfe2d;
     border-radius: 20px;
     color: black;
     margin-bottom: 50px;
@@ -1292,11 +1281,11 @@
         height: 100%;
         top: 0px;
         left: 0px;
-        background-color: greenyellow;
+        background-color: white;
         opacity: 0;
         border-radius: 30px;
         transition: all 0.3s ease;
-        border: 1px solid greenyellow;
+        border: 1px solid white;
     }
     &:hover::after{
         transition: all 0.3s ease;
@@ -1308,6 +1297,33 @@
     }
 }
 
+@media (min-width: 900px) and (max-width: 1240px){
+    .homePage .homepageAchivment .homeachivSection{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .homePage .homepageAchivment .homeachivSection .homeachivItem:nth-child(1) div{
+        font-size: 150px;
+        
+    }
+    .homePage .homepageAchivment .homeachivSection .homeachivItem:nth-child(1) h3,
+    .homePage .homepageAchivment .homeachivSection .homeachivItem:nth-child(1) p{
+        text-align: start;
+    }
+    .homePage .homepageAchivment .homeachivSection .homeachivItem:nth-child(1){
+        grid-column: span 2;
+        align-items: start;
+        text-align: start;
+
+        
+    }
+}
+
+@media (min-width: 765px) and (max-width: 900px){
+    .homePage .homepageAchivment .homeachivSection{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 @media (max-width: 768px){
     /* heroSection */
     .heroheadingrightImg{

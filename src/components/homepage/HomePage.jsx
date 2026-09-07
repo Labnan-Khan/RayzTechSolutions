@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import './homepage.css'
 import HeroSectionAnimation from '../heroSectionAnimation/HeroSectionAnimation'
 import { IoMdArrowForward } from 'react-icons/io'
-import { FaArrowLeft, FaArrowRight, FaLinkedinIn, FaMobileAlt, FaNodeJs, FaReact, FaStar } from 'react-icons/fa'
+import { FaArrowLeft, FaArrowRight, FaCode, FaExpandArrowsAlt, FaLinkedinIn, FaMobileAlt, FaNodeJs, FaReact, FaRocket, FaShieldAlt, FaSlidersH, FaStar, FaTachometerAlt } from 'react-icons/fa'
 import { DiReact } from 'react-icons/di'
 import { AiOutlineJavaScript } from 'react-icons/ai'
 import { SiDevelopmentcontainers, SiMongodb } from 'react-icons/si'
@@ -10,7 +10,17 @@ import { GoArrowRight } from 'react-icons/go'
 import { RiStackFill } from 'react-icons/ri'
 import { TiThLargeOutline } from 'react-icons/ti'
 import { BiLogoMongodb } from 'react-icons/bi'
+import AOS from "aos";
+import "aos/dist/aos.css";
 function HomePage() {
+
+  useEffect(() => {
+  AOS.init({
+    duration: 1000,
+    once: true,
+  });
+}, []);
+
 
 const Counter = ({ target, suffix = "", prefix = "" }) => {
   const [count, setCount] = useState(0);
@@ -81,19 +91,19 @@ const [changeReview,setChangeReview]= useState(0)
   return (
     <div className='homePage'>
 
-      <div className='homeHero'>
+      <div className='homeHero' data-aos="fade-up">
 
         <div className='heroHeading'>
           <div className='heroheadingLeft'>
-          <p><span></span>MERN Stack Web Application Development</p>
-          <div className='herosectionH1'>
+          <p data-aos="fade-right"><span></span>MERN Stack Web Application Development</p>
+          <div className='herosectionH1' data-aos="fade-right">
             <h1>From idea to launch,</h1>
             {/* <h1> we build <span>websites  <span className='headingicon'><RiStackFill /></span> <span className='headingicon'><FaMobileAlt /></span> <span className='headingicon'><TiThLargeOutline /></span></span></h1> */}
             <h1> we build <span>Web Applications</span>  </h1>
             <h1>that perform.</h1>
           </div>
 
-          <div className='heroMid'>
+          <div className='heroMid' data-aos="fade-up">
 
             <div className='heromidItem'>
               <p>{"{/}"}</p>
@@ -114,7 +124,7 @@ const [changeReview,setChangeReview]= useState(0)
 
           </div>
           </div>
-          <div className='heroheadingrightImg'></div>
+          <div className='heroheadingrightImg' data-aos="fade-left"></div>
         </div>
         <div className='HomeherosectionAnimation'>
           <HeroSectionAnimation/>
@@ -125,7 +135,7 @@ const [changeReview,setChangeReview]= useState(0)
       <div className='homeRuslut'>
 
         <div className='resultHeading'>
-          <div className='resultHeadingleftImg'></div>
+          <div className='resultHeadingleftImg' data-aos="fade-right"></div>
 
           <div className='resultHeadingRightSec'>
             <h1>Your Idea. Our Development <span>Expertise</span>.</h1>
@@ -161,22 +171,22 @@ const [changeReview,setChangeReview]= useState(0)
           <div className='firstsec'>
             {/* <h4>+170%</h4> */}
             <Counter target={170} prefix="+" suffix="%" />
-            <h3>Engagement Rate</h3>
-            <p>ntuitive flows that turn clicks into leads</p>
+            <h3 data-aos="fade-up">Engagement Rate</h3>
+            <p data-aos="fade-up">ntuitive flows that turn clicks into leads</p>
           </div>
 
           <div>
             {/* <h4>4.6X</h4> */}
             <Counter target={4.6} prefix="+" suffix="X" />
-            <h3>Revenue Growth After Redesign</h3>
-            <p>Product improvements that scale business impact</p>
+            <h3 data-aos="fade-up">Revenue Growth After Redesign</h3>
+            <p data-aos="fade-up">Product improvements that scale business impact</p>
           </div>
 
           <div>
             {/* <h4>-370%</h4> */}
             <Counter target={370} prefix="+" suffix="%" />
-            <h3>Churn Across SaaS Clients</h3>
-            <p>Better onboarding, better UX, fewer cancellations</p>
+            <h3 data-aos="fade-up">Churn Across SaaS Clients</h3>
+            <p data-aos="fade-up">Better onboarding, better UX, fewer cancellations</p>
           </div>
 
         </div>
@@ -266,16 +276,16 @@ const [changeReview,setChangeReview]= useState(0)
 
       </div>
 
-      <div className='homeAboutUs'>
+      <div className='homeAboutUs' target={20} data-aos="fade-up">
 
         <div className='homeAboutUsHeading'>
           <div>
-            <h1>We <span>Build</span> the Technology </h1>
-            <h1>Behind Your Idea.</h1>
-            <p>RayzTechSolutions is a web application development company focused on building custom solutions with modern JavaScript technologies.</p>
+            <h1 target={20} data-aos="fade-up">We <span>Build</span> the Technology </h1>
+            <h1 target={20} data-aos="fade-up">Behind Your Idea.</h1>
+            <p target={20} data-aos="fade-up">RayzTechSolutions is a web application development company focused on building custom solutions with modern JavaScript technologies.</p>
           </div>
 
-          <div>
+          <div target={20} data-aos="fade-up">
             <div></div>
             <div></div>
             <div></div>
@@ -285,7 +295,7 @@ const [changeReview,setChangeReview]= useState(0)
           </div>
         </div>
 
-        <div className='homeAboutUs2ndSec'>
+        <div className='homeAboutUs2ndSec' target={20} data-aos="fade-up">
           
           <div>
             <span>{"{/}"}</span>
@@ -327,56 +337,56 @@ const [changeReview,setChangeReview]= useState(0)
         </div>
 
       </div>
-
+      
       <div className='homepageAchivment'>
         <h1>Why Build With RayzTechSolutions?</h1>
         <p>We focus on building software that works—not simply delivering code.</p> 
           <div className='homeachivSection'>
 
-            <div className='homeachivItem'>
+            {/* <div className='homeachivItem'>
               <h3>RayzTechSolutions</h3>
               <span><FaArrowRight /></span>
-            </div>
+            </div> */}
             
 
             <div className='homeachivItem'>
-              <div></div>
+              <div><FaSlidersH /></div>
               <h3>Built Around Your Requirements</h3>
               <p>Every application is developed according to your business logic, users, and goals.</p>
             </div>
 
             <div className='homeachivItem'>
-              <div></div>
+              <div><FaExpandArrowsAlt /></div>
               <h3>Scalable From Day One</h3>
               <p>We structure your application so new features, users, and functionality can be added without rebuilding everything.</p>
             </div>
 
             <div className='homeachivItem'>
-              <div></div>
+              <div><FaTachometerAlt /></div>
               <h3>Performance Focused</h3>
               <p>Fast interfaces, efficient APIs, optimized data handling, and responsive experiences.</p>
             </div>
 
             <div className='homeachivItem'>
-              <div></div>
+              <div><FaCode /></div>
               <h3>Clean & Maintainable Code</h3>
               <p>Well-structured code makes your application easier to maintain, improve, and scale.</p>
             </div>
 
             <div className='homeachivItem'>
-              <div></div>
+              <div><FaShieldAlt /></div>
               <h3>Secure by Design</h3>
               <p>Authentication, authorization, protected routes, and secure API communication.</p>
             </div>
 
             <div className='homeachivItem'>
-              <div></div>
+              <div><FaRocket /></div>
               <h3>Built for the Long Run</h3>
               <p>We don't just build and disappear. Your application can continue evolving as your business grows.</p>
             </div>
 
             <div className='homeachivItem'>
-              img
+              
             </div>
 
           </div>
