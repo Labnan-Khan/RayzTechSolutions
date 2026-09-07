@@ -19,6 +19,12 @@ p {
   color: white;
 
 }
+ h1 span{
+    color: greenyellow;
+    font-family: cursive;
+
+    position: relative;
+}
 
 a{
   text-decoration: none;
