@@ -7,11 +7,12 @@ import Price from './components/price/Price'
 import Servie from './components/service/Servie'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Project from './components/projects/Project'
+import ScrollToTop from './components/scrollToTop/ScrollToTop'
 
 function App() {
   return (
     <BrowserRouter>
-    
+      <ScrollToTop />
       <Navbar />
 
       <Routes>
