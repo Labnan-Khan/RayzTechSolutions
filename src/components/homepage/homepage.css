@@ -30,7 +30,7 @@
 
 .homePage .homeHero .heroHeading .heroheadingrightImg{
  background-image: url(../../assets/homePageHeroImg.png);
- width: 80%;
+ width: 50%;
  aspect-ratio: 12/9;
  /* background-color: #339933; */
  background-size: cover;
@@ -61,7 +61,9 @@
     font-family: cursive;
 
     position: relative;
-}.homePage .homeHero .heroHeading .heroheadingLeft .herosectionH1 h1:nth-child(2) span{
+}
+
+/* .homePage .homeHero .heroHeading .heroheadingLeft .herosectionH1 h1:nth-child(2) span{
     background-color: rgba(255, 255, 255, 0.187);
     border-radius: 30px;
     padding: 0px 5px;
@@ -73,7 +75,8 @@
     width: fit-content;
     height: 70px;
 
-}
+} */
+
 .homePage .homeHero .heroHeading .heroheadingLeft .herosectionH1 h1 span .headingicon{
     position: absolute;
     font-size: 25px;
@@ -120,18 +123,18 @@
 .homePage .homeHero .heroMid{
     width: 90%;
     display: flex;
-    justify-content: start;
-    align-items: center;
-    gap: 30px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
 }
 .homePage .homeHero .heroMid .heromidItem{
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 10px;
-    width: 30%;
+    width: 100%;
     /* background-color: aqua; */
-    margin-top: 30px;
+    /* margin-top: 30px; */
 }
 .homePage .homeHero .heroMid .heromidItem p:nth-child(1){
     color: rgb(130, 127, 127);
@@ -204,8 +207,8 @@
     width: 90%;
     margin-top: 30px;
     padding-top: 30px;
-    border-top: 1px solid rgba(172, 255, 47, 0.216);
-    border-bottom: 1px solid rgba(172, 255, 47, 0.216);
+    /* border-top: 1px solid rgba(172, 255, 47, 0.216);
+    border-bottom: 1px solid rgba(172, 255, 47, 0.216); */
     
 }
 

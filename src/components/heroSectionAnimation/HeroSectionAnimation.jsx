@@ -1,13 +1,25 @@
 import React from 'react'
 import './heroSectionAnimation.css'
-import { FaRegHeart, FaShieldAlt } from 'react-icons/fa'
-import { LuCookingPot } from 'react-icons/lu'
-import { RiSeedlingLine } from 'react-icons/ri'
-import { GiMountaintop } from 'react-icons/gi'
-import { BsBookmarkPlus } from 'react-icons/bs'
+import { FaApple, FaAws, FaGithub, FaGoogle, FaMicrosoft } from 'react-icons/fa'
+import { FaMeta } from 'react-icons/fa6'
+import  { SiCloudflare, SiGooglecloud, SiMongodb,  SiVercel } from "react-icons/si";
+import { VscAzure } from 'react-icons/vsc'
+
 function HeroSectionAnimation() {
     const heroanimationlist = [
-        "Innovation", "Expertise", "Scalability" ,"Performance", "Security", "Reliability", "Excellence", "Optimization", "Modernization", "Solutions", "Creativity", "Reliability"
+    { name: "Google", icon: FaGoogle },
+    { name: "Microsoft", icon: FaMicrosoft },
+    { name: "AWS", icon: FaAws },
+    { name: "Meta", icon: FaMeta },
+    // { name: "OpenAI", icon: SiOpenai },
+    { name: "GitHub", icon: FaGithub },
+    { name: "Vercel", icon: SiVercel },
+    { name: "MongoDB", icon: SiMongodb },
+    { name: "Apple", icon: FaApple },
+    { name: "Google Cloud", icon: SiGooglecloud },
+    { name: "Microsoft Azure", icon: VscAzure },
+    { name: "Cloudflare", icon: SiCloudflare }
+
     ]
   return (
     <div className='herosectionAnimation'>
@@ -15,11 +27,11 @@ function HeroSectionAnimation() {
             <div className='heroSectionFooter'>
 
                 {[...heroanimationlist,...heroanimationlist].map((item,index)=>{
-                    // const Icon = item.icon
+                    const Icon = item.icon
                    return( 
                         <div key={index}>
-                            {/* <span><Icon /></span> */}
-                            <h3>{item}</h3>
+                            <span><Icon /></span>
+                            <h3>{item.name}</h3>
                             {/* <p>{item.para}</p> */}
                         </div>
                     

@@ -21,7 +21,8 @@ function HomePage() {
           <p>Digital Product Design And Development Company</p>
           <div className='herosectionH1'>
             <h1>From idea to <span>launch</span>,</h1>
-            <h1> we build <span>websites  <span className='headingicon'><RiStackFill /></span> <span className='headingicon'><FaMobileAlt /></span> <span className='headingicon'><TiThLargeOutline /></span></span></h1>
+            {/* <h1> we build <span>websites  <span className='headingicon'><RiStackFill /></span> <span className='headingicon'><FaMobileAlt /></span> <span className='headingicon'><TiThLargeOutline /></span></span></h1> */}
+            <h1> we build <span>websites</span>  </h1>
             <h1>that <span>perform</span>.</h1>
           </div>
 
