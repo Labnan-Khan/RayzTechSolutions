@@ -31,8 +31,6 @@ function HeroSectionAnimation() {
                    return( 
                         <div key={index}>
                             <span><Icon /></span>
-                            <h3>{item.name}</h3>
-                            {/* <p>{item.para}</p> */}
                         </div>
                     
                    )

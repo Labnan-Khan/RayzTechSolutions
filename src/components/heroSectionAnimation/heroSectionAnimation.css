@@ -15,8 +15,8 @@
      /* background-color: #8D1FD4; */
      overflow: hidden; /*add this*/
      box-sizing: content-box;
-     background-color: rgba(172, 255, 47, 0.062);
-     border: 1px solid rgba(172, 255, 47, 0.232);
+     /* background-color: rgba(172, 255, 47, 0.062); */
+     /* border: 1px solid rgba(136, 134, 134, 0.255); */
      border-radius: 20px;
 }
 
@@ -42,9 +42,9 @@
     text-align: center;
     /* border: 2px solid white; */
     padding: 5px 20px;
-    width: 250px;
+    width: 100px;
     gap: 20px;
-    /* background-color: #650bbe;s */
+    /* background-color: #650bbe; */
     border-radius: 20px;
     border: 2px solid rgba(146, 145, 145, 0);
     /* border-left: 2px solid #042f22; */
@@ -55,7 +55,7 @@
     position: relative;
 }
 
-.heroSectionFooter  div::after{
+/* .heroSectionFooter  div::after{
     position: absolute;
     content: "";
     height: 40px;
@@ -63,7 +63,7 @@
     left: 0px;
     top: opx;
     background-color: greenyellow;
-}
+} */
 
 .heroSectionFooter  div span{
     color: rgb(102, 101, 101);

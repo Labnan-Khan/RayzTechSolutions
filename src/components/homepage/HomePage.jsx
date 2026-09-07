@@ -87,10 +87,10 @@ const [changeReview,setChangeReview]= useState(0)
           <div className='heroheadingLeft'>
           <p><span></span>MERN Stack Web Application Development</p>
           <div className='herosectionH1'>
-            <h1>From idea to <span>launch</span>,</h1>
+            <h1>From idea to launch,</h1>
             {/* <h1> we build <span>websites  <span className='headingicon'><RiStackFill /></span> <span className='headingicon'><FaMobileAlt /></span> <span className='headingicon'><TiThLargeOutline /></span></span></h1> */}
             <h1> we build <span>Web Applications</span>  </h1>
-            <h1>that <span>perform</span>.</h1>
+            <h1>that perform.</h1>
           </div>
 
           <div className='heroMid'>

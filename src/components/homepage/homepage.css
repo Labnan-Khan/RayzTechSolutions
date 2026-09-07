@@ -600,6 +600,13 @@
     font-weight: 100;
     position: relative;
 }
+.homePage .homeAboutUs .homeAboutUsHeading div h4{
+    /* color: red; */
+    width: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .homePage .homeAboutUs .homeAboutUsHeading div:nth-child(2) div{
     width: 50px;
     aspect-ratio: 9/9;
@@ -616,16 +623,20 @@
 .homePage .homeAboutUs .homeAboutUsHeading div:nth-child(2) div:nth-child(1){
     top: -20px;
     width: 60px;
+    animation: floatOne 4s ease-in-out infinite;
 }
 
 .homePage .homeAboutUs .homeAboutUsHeading div:nth-child(2) div:nth-child(2){
     top: -50px;
-    left: 0px
+    left: 0px;
+     animation: floatTwo 5s ease-in-out infinite;
 }
 .homePage .homeAboutUs .homeAboutUsHeading div:nth-child(2) div:nth-child(3){
     top: -60px;
     right: 10px;
+    animation: floatThree 4.5s ease-in-out infinite;
 }
+
 
 
 .homePage .homeAboutUs .homeAboutUs2ndSec{
@@ -717,6 +728,36 @@
     justify-content: center;
     align-items: center;
     font-size: 25px;
+}
+
+@keyframes floatOne {
+    0%, 100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    50% {
+        transform: translate(15px, -12px) rotate(8deg);
+    }
+}
+
+@keyframes floatTwo {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(-12px, 15px);
+    }
+}
+
+@keyframes floatThree {
+    0%, 100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    50% {
+        transform: translate(12px, -18px) rotate(-8deg);
+    }
 }
 
 /* homepageAchivment */
