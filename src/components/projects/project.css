@@ -204,7 +204,7 @@
     font-size: 15px;
 }
 .projectPage .projectRight h1{
-    display: flex;
+    display: block;
 }
 
 .projectPage .projectypeBtnSec h1{
@@ -253,7 +253,6 @@
         flex-direction: row;
         justify-content: start;
         align-items: center;
-        /* flex-wrap: wrap; */
         width: 100%;
     }
     .projectPage .projectypeBtnSec div:nth-child(1){
