@@ -1429,13 +1429,13 @@
 /* homeAboutUs */
 
 .homePage .homeAboutUs{
-    width: 90%;
+    width: 100%;
+    padding: 50px 20px;
 }
+.homePage .homeAboutUs .homeAboutUs3ndSec,
+.homePage .homeAboutUs .homeAboutUs2ndSec,
 .homePage .homeAboutUs .homeAboutUsHeading{
-    /* flex-direction: column;
-    gap: 60px;
-    justify-content: center; */
-    /* align-items: start; */
+    width: 100%;
 }
 .homePage .homeAboutUs .homeAboutUsHeading h1{
     font-size: 35px;
@@ -1445,8 +1445,8 @@
 
 }
 .homePage .homeAboutUs .homeAboutUsHeading div:nth-child(2) div:nth-child(1) {
- left: -40px;
- display: none;
+ left: 40px;
+
 }
 .homePage .homeAboutUs  .homeAboutUs2ndSec{
     flex-wrap: wrap;
@@ -1467,13 +1467,20 @@
 .homePage .homepageAchivment{
     width: 90%;
 }
+.homePage .homepageAchivment p{
+    text-align: center;
+}
 .homePage .homepageAchivment h1{
     font-size: 35px;
     width: 100%;
     text-align: center;
 }
 .homePage .homepageAchivment .homeachivSection{
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 /* homepageReviews */
 .homePage .homepageReviews{
