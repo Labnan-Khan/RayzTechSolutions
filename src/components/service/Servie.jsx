@@ -60,113 +60,7 @@ function Servie() {
             </div>
 
         </div>
-
-        <div className='ourPromise'>
-            <h1>Custom-built and high-performing <br /><span>MERN web applications</span></h1>
-            <div className='ourPromiseSec'>
-                
-                <div>
-                    <span><FaHandshake /></span>
-                    <div>
-                        <h3>Secure Architecture</h3>
-                        <p>Secure authentication, protected APIs, and responsible data handling are considered throughout development.</p>
-                    </div>
-                </div>
-
-                <div>
-                    <span><FaShieldAlt /></span>
-                    <div>
-                        <h3>Strong Security</h3>
-                        <p>Robust security measures to protect your product and user data</p>
-                    </div>
-                </div>
-
-                <div>
-                    <span><FaCode /></span>
-                    <div>
-                        <h3>Quality Code</h3>
-                        <p>Clean and maintainable development focused on reliability, performance, and future expansion.</p>
-                    </div>
-                </div>
-
-                <div>
-                    <span><FaHeadset /></span>
-                    <div>
-                        <h3>Ongoing Support</h3>
-                        <p>We support your application beyond launch with fixes, improvements, integrations, and new features.</p>
-                    </div>
-                </div>
-                <div></div>
-            </div>
-        </div>
-
-        <div className='ourProcess'>
-            <h1>From requirements to production, <br /><span>built around your business needs</span></h1>
-            <p>Our development process turns your requirements into a functional, responsive, secure, and production-ready web application.</p>
-
-            <div className='ourProcessSec'>
-                
-                <div>
-                    <h3>Discovery & Requirements</h3>
-                    <p>We understand your goals, users, workflows, features, and technical requirements before development begins.</p>
-                </div>
-
-                <div>
-                    <h3>Planning & Architecture</h3>
-                    <p>We define the application structure, database, APIs, technology approach, and development roadmap.</p>
-                </div>
-
-                <div>
-                    <h3>UI/UX Development</h3>
-                    <p>We build responsive React interfaces with clear user flows and interactions designed around your product.</p>
-                </div>
-
-                <div>
-                    <h3>MERN Developmente</h3>
-                    <p>We develop the frontend, backend, APIs, authentication, database logic, and core application features.</p>
-                </div>
-
-                <div>
-                    <h3>Testing & Optimization</h3>
-                    <p>We test functionality, responsiveness, security, API behavior, and performance before launch.</p>
-                </div>
-
-                <div>
-                    <h3>Deployment & Support</h3>
-                    <p>We prepare your application for production and provide support for fixes, improvements, and future features.</p>
-                </div>
-            </div>
-        </div>
-
-        <div className='advantage'>
-            <h1>What will <span>you get</span> from<br /> working with RTS:</h1>
-            <p>You get a development partner focused on building reliable web applications around your requirements—not forcing your business into a template.</p>
-
-            <div className='advantageSec'>
-                <div>
-                    <h3>Custom Development</h3>
-                    <p>We build flexible applications around your business logic, workflows, and product requirements, with an architecture that can evolve with your needs.</p>
-                    <div>
-                        <p>Custom Business Logic</p>
-                        <p>Scalable Architecture</p>
-                        <p>Clean, Maintainable Code</p>
-                        <p>Responsive Development</p>
-                    </div>
-                </div>
-
-                <div>
-                    <h3>Performance & Security</h3>
-                    <p>We focus on dependable performance, secure user access, efficient APIs, and reliable application behavior from development through launch.</p>
-                    <div>
-                        <p>Performance Optimization</p>
-                        <p>Secure Authentication</p>
-                        <p>REST API Integration</p>
-                        <p>Ongoing Support</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+        
         <div className='weOffer'>
             <h1>Our capabilities and what we <br />can offer in <span>web development</span></h1>
             <p>From SaaS platforms to internal business tools, we build custom web applications around your features, users, data, and workflows.</p>
@@ -380,6 +274,113 @@ function Servie() {
 
             </div>
         </div>
+
+        <div className='ourPromise'>
+            <h1>Custom-built and high-performing <br /><span>MERN web applications</span></h1>
+            <div className='ourPromiseSec'>
+                
+                <div>
+                    <span><FaHandshake /></span>
+                    <div>
+                        <h3>Secure Architecture</h3>
+                        <p>Secure authentication, protected APIs, and responsible data handling are considered throughout development.</p>
+                    </div>
+                </div>
+
+                <div>
+                    <span><FaShieldAlt /></span>
+                    <div>
+                        <h3>Strong Security</h3>
+                        <p>Robust security measures to protect your product and user data</p>
+                    </div>
+                </div>
+
+                <div>
+                    <span><FaCode /></span>
+                    <div>
+                        <h3>Quality Code</h3>
+                        <p>Clean and maintainable development focused on reliability, performance, and future expansion.</p>
+                    </div>
+                </div>
+
+                <div>
+                    <span><FaHeadset /></span>
+                    <div>
+                        <h3>Ongoing Support</h3>
+                        <p>We support your application beyond launch with fixes, improvements, integrations, and new features.</p>
+                    </div>
+                </div>
+                <div></div>
+            </div>
+        </div>
+
+        <div className='ourProcess'>
+            <h1>From requirements to production, <br /><span>built around your business needs</span></h1>
+            <p>Our development process turns your requirements into a functional, responsive, secure, and production-ready web application.</p>
+
+            <div className='ourProcessSec'>
+                
+                <div>
+                    <h3>Discovery & Requirements</h3>
+                    <p>We understand your goals, users, workflows, features, and technical requirements before development begins.</p>
+                </div>
+
+                <div>
+                    <h3>Planning & Architecture</h3>
+                    <p>We define the application structure, database, APIs, technology approach, and development roadmap.</p>
+                </div>
+
+                <div>
+                    <h3>UI/UX Development</h3>
+                    <p>We build responsive React interfaces with clear user flows and interactions designed around your product.</p>
+                </div>
+
+                <div>
+                    <h3>MERN Developmente</h3>
+                    <p>We develop the frontend, backend, APIs, authentication, database logic, and core application features.</p>
+                </div>
+
+                <div>
+                    <h3>Testing & Optimization</h3>
+                    <p>We test functionality, responsiveness, security, API behavior, and performance before launch.</p>
+                </div>
+
+                <div>
+                    <h3>Deployment & Support</h3>
+                    <p>We prepare your application for production and provide support for fixes, improvements, and future features.</p>
+                </div>
+            </div>
+        </div>
+
+        <div className='advantage'>
+            <h1>What will <span>you get</span> from<br /> working with RTS:</h1>
+            <p>You get a development partner focused on building reliable web applications around your requirements—not forcing your business into a template.</p>
+
+            <div className='advantageSec'>
+                <div>
+                    <h3>Custom Development</h3>
+                    <p>We build flexible applications around your business logic, workflows, and product requirements, with an architecture that can evolve with your needs.</p>
+                    <div>
+                        <p>Custom Business Logic</p>
+                        <p>Scalable Architecture</p>
+                        <p>Clean, Maintainable Code</p>
+                        <p>Responsive Development</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Performance & Security</h3>
+                    <p>We focus on dependable performance, secure user access, efficient APIs, and reliable application behavior from development through launch.</p>
+                    <div>
+                        <p>Performance Optimization</p>
+                        <p>Secure Authentication</p>
+                        <p>REST API Integration</p>
+                        <p>Ongoing Support</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
         <div className='stack'>
             <h1>Built with a modern <br /> <span>MERN technology stack</span> <br /></h1>
