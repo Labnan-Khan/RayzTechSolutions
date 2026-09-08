@@ -16,16 +16,16 @@ function Servie() {
                 <div className='stopLeftSec'>
                     <div className='stTopRow'>
                         <span>Saas</span>
-                        <span>AI</span>
-                        <span>Web 3.0</span>
+                        <span>MERN</span>
                         <span>CRM</span>
+                        <span>Web Apps</span>
                     </div>
-                    <h1>Web Development <span>Service</span></h1>
-                    <p>Get highly-performing, fully functional and secure web experiences. Our front-end and back-end development team is here to improve, redesign, or build your website from a scratch.</p>
+                    <h1>MERN Stack <span>Web Application</span> Development </h1>
+                    <p>We build custom, scalable, and secure web applications around your business requirements, users, workflows, and goals.</p>
                     <div className='stBottomRow'>
                         <div>
-                            <button className='hoverLeftAnimationBtn'>Book a Call</button>
-                            <button className='hoverLeftAnimationBtn'>Check Portfolio</button>
+                            <button className='hoverLeftAnimationBtn'>Start a Project</button>
+                            <button className='hoverLeftAnimationBtn'>View Our Work</button>
                         </div>
                         <div>
                             <span><FaStar /></span>
@@ -33,7 +33,7 @@ function Servie() {
                             <span><FaStar /></span>
                             <span><FaStar /></span>
                             <span><FaStar /></span>
-                            <p>80+ reviews</p>
+                            <p>Built around your requirements</p>
                         </div>
                     </div>
 
@@ -47,29 +47,29 @@ function Servie() {
             <div className='sHeroBSec'>
                 <div>
                     <h3>205+</h3>
-                    <p>Projects successfully completed in various niches</p>
+                    <p>Applications designed around your business requirements.</p>
                 </div>
                 <div>
                     <h3>5.0</h3>
-                    <p>Average client rating on Clutch</p>
+                    <p>Frontend, backend, APIs, and database development.</p>
                 </div>
                 <div>
                     <h3>$1B+</h3>
-                    <p>Funds raised by our partners</p>
+                    <p>Architecture prepared for future features and business growth.</p>
                 </div>
             </div>
 
         </div>
 
         <div className='ourPromise'>
-            <h1>High-performing and custom-built <br /><span>web development services</span></h1>
+            <h1>Custom-built and high-performing <br /><span>MERN web applications</span></h1>
             <div className='ourPromiseSec'>
                 
                 <div>
                     <span><FaHandshake /></span>
                     <div>
-                        <h3>Collaborative Process</h3>
-                        <p>We work closely with your team to align with your goals and vision</p>
+                        <h3>Secure Architecture</h3>
+                        <p>Secure authentication, protected APIs, and responsible data handling are considered throughout development.</p>
                     </div>
                 </div>
 
@@ -84,16 +84,16 @@ function Servie() {
                 <div>
                     <span><FaCode /></span>
                     <div>
-                        <h3>Quality Development</h3>
-                        <p>Delivering reliable, high-performing solutions with clean code</p>
+                        <h3>Quality Code</h3>
+                        <p>Clean and maintainable development focused on reliability, performance, and future expansion.</p>
                     </div>
                 </div>
 
                 <div>
                     <span><FaHeadset /></span>
                     <div>
-                        <h3>Full Support</h3>
-                        <p>From concept to launch, we’re with you all the way</p>
+                        <h3>Ongoing Support</h3>
+                        <p>We support your application beyond launch with fixes, improvements, integrations, and new features.</p>
                     </div>
                 </div>
                 <div></div>
@@ -101,67 +101,67 @@ function Servie() {
         </div>
 
         <div className='ourProcess'>
-            <h1>Our web development process wraps <br />around your <span>unique business needs</span></h1>
-            <p>Our developers strive to turn design into a fully functional, custom and responsive website for your business.</p>
+            <h1>From requirements to production, <br /><span>built around your business needs</span></h1>
+            <p>Our development process turns your requirements into a functional, responsive, secure, and production-ready web application.</p>
 
             <div className='ourProcessSec'>
                 
                 <div>
-                    <h3>Discovery & Planning</h3>
-                    <p>The process begins with a discovery workshop to define the concept, review documentation.</p>
+                    <h3>Discovery & Requirements</h3>
+                    <p>We understand your goals, users, workflows, features, and technical requirements before development begins.</p>
                 </div>
 
                 <div>
-                    <h3>Process Setup & Analysis</h3>
-                    <p>In this stage, we create a roadmap with timelines, milestones, and initial prototype ideas.</p>
+                    <h3>Planning & Architecture</h3>
+                    <p>We define the application structure, database, APIs, technology approach, and development roadmap.</p>
                 </div>
 
                 <div>
-                    <h3>Design Stage</h3>
-                    <p>During this stage, we create aroadmap with timelines, and initial prototype ideas.</p>
+                    <h3>UI/UX Development</h3>
+                    <p>We build responsive React interfaces with clear user flows and interactions designed around your product.</p>
                 </div>
 
                 <div>
-                    <h3>Development Stage</h3>
-                    <p>During this stage, we outline a roadmap with timelines, milestones and estimates.</p>
+                    <h3>MERN Developmente</h3>
+                    <p>We develop the frontend, backend, APIs, authentication, database logic, and core application features.</p>
                 </div>
 
                 <div>
-                    <h3>Testing Stage</h3>
-                    <p>During testing, we assess functionality, usability, compatibility, security, and performance.</p>
+                    <h3>Testing & Optimization</h3>
+                    <p>We test functionality, responsiveness, security, API behavior, and performance before launch.</p>
                 </div>
 
                 <div>
-                    <h3>Maintenance Stage</h3>
-                    <p>The final stage is deployment, ensuring a launch and preparing for essential post-release tasks.</p>
+                    <h3>Deployment & Support</h3>
+                    <p>We prepare your application for production and provide support for fixes, improvements, and future features.</p>
                 </div>
             </div>
         </div>
 
         <div className='advantage'>
-            <h1>What will <span>you get</span> from <br /> cooperating <span>with us</span>:</h1>
-            <p>Our front-end and back-end developers offer long-term and personalized website development solutions with a diverse tech stack, responsive interfaces and safety measures.</p>
+            <h1>What will <span>you get</span> from<br /> working with RTS:</h1>
+            <p>You get a development partner focused on building reliable web applications around your requirements—not forcing your business into a template.</p>
 
             <div className='advantageSec'>
                 <div>
-                    <h3>Expertise & Experience</h3>
-                    <p>Our team brings deep industry knowledge and hands-on experience in Web3, DeFi, and decentralized applications.</p>
+                    <h3>Custom Development</h3>
+                    <p>We build flexible applications around your business logic, workflows, and product requirements, with an architecture that can evolve with your needs.</p>
                     <div>
-                        <p>Skilled Developers</p>
-                        <p>Flexible Approach</p>
-                        <p>Performance Optimization</p>
-                        <p>Process Transparency</p>
+                        <p>Custom Business Logic</p>
+                        <p>Scalable Architecture</p>
+                        <p>Clean, Maintainable Code</p>
+                        <p>Responsive Development</p>
                     </div>
                 </div>
 
                 <div>
-                    <h3>Support & Security</h3>
-                    <p>We prioritize security and support to ensure a seamless user experience. With robust protocols, continuous monitoring, and a dedicated team.</p>
+                    <h3>Performance & Security</h3>
+                    <p>We focus on dependable performance, secure user access, efficient APIs, and reliable application behavior from development through launch.</p>
                     <div>
+                        <p>Performance Optimization</p>
+                        <p>Secure Authentication</p>
+                        <p>REST API Integration</p>
                         <p>Ongoing Support</p>
-                        <p>Comprehensive Security</p>
-                        <p>Integration Services</p>
-                        <p>Scalability & Growth</p>
                     </div>
                 </div>
             </div>
@@ -169,117 +169,220 @@ function Servie() {
 
         <div className='weOffer'>
             <h1>Our capabilities and what we <br />can offer in <span>web development</span></h1>
-            <p>From creating visually stunning and functional websites to implementing dynamic features - our developers are experienced to cover your needs.</p>
+            <p>From SaaS platforms to internal business tools, we build custom web applications around your features, users, data, and workflows.</p>
 
             <div className='weOfferSec'>
 
                 <div>
-                    <h2>Saas</h2>
+                    <h2>SaaS & Business Applications</h2>
                     
                     <div>
                         <span><GiStarShuriken /></span>
-                        <p>CRM, Analytics</p>
+                        <p>SaaS Platforms</p>
                     </div>
                     
                     <div>
                         <span><GiStarShuriken /></span>
-                        <p>Automation tools</p>
+                        <p>CRM Systems</p>
                     </div>
                     
                     <div>
                         <span><GiStarShuriken /></span>
-                        <p>HR management</p>
+                        <p>Admin Dashboards</p>
                     </div>
                     
                     <div>
                         <span><GiStarShuriken /></span>
-                        <p>ERP softwares</p>
+                        <p>ERP Solutions</p>
                     </div>
                     
                     <div>
                         <span><GiStarShuriken /></span>
-                        <p>Al data tools</p>
+                        <p>Business Management Tools</p>
                     </div>
                     
                     <div>
                         <span><GiStarShuriken /></span>
-                        <p>Marketings platforms</p>
-                    </div>
-                </div>
-
-                <div>
-                    <h2>E-commerce</h2>
-                    
-                    <div>
-                        <span><GiStarShuriken /></span>
-                        <p>Retail</p>
-                    </div>
-                    
-                    <div>
-                        <span><GiStarShuriken /></span>
-                        <p>B2C & B2B</p>
-                    </div>
-                    
-                    <div>
-                        <span><GiStarShuriken /></span>
-                        <p>Subscription</p>
-                    </div>
-                    
-                    <div>
-                        <span><GiStarShuriken /></span>
-                        <p>Marketplace</p>
-                    </div>
-                    
-                    <div>
-                        <span><GiStarShuriken /></span>
-                        <p>Integrations for ERP, PIM, WMS</p>
-                    </div>
-                    
-                    <div>
-                        <span><GiStarShuriken /></span>
-                        <p>Payment and tax services</p>
+                        <p>Customer Portals</p>
                     </div>
                 </div>
 
                 <div>
-                    <h2>E-commerce</h2>
+                    <h2>E-commerce & Marketplaces</h2>
                     
                     <div>
                         <span><GiStarShuriken /></span>
-                        <p>Retail</p>
+                        <p>E-commerce Platforms</p>
                     </div>
                     
                     <div>
                         <span><GiStarShuriken /></span>
-                        <p>B2C & B2B</p>
+                        <p>B2B & B2C Solutions</p>
                     </div>
                     
                     <div>
                         <span><GiStarShuriken /></span>
-                        <p>Subscription</p>
+                        <p>Online Marketplaces</p>
                     </div>
                     
                     <div>
                         <span><GiStarShuriken /></span>
-                        <p>Marketplace</p>
+                        <p>Product Management</p>
                     </div>
                     
                     <div>
                         <span><GiStarShuriken /></span>
-                        <p>Integrations for ERP, PIM, WMS</p>
+                        <p>Order Management</p>
                     </div>
                     
                     <div>
                         <span><GiStarShuriken /></span>
-                        <p>Payment and tax services</p>
+                        <p>Payment Integration</p>
                     </div>
+                </div>
+
+                <div>
+    <h2>Custom Web Applications</h2>
+    
+    <div>
+        <span><GiStarShuriken /></span>
+        <p>Internal Business Tools</p>
+    </div>
+    
+    <div>
+        <span><GiStarShuriken /></span>
+        <p>Workflow Applications</p>
+    </div>
+    
+    <div>
+        <span><GiStarShuriken /></span>
+        <p>Database-Driven Apps</p>
+    </div>
+    
+    <div>
+        <span><GiStarShuriken /></span>
+        <p>Authentication Systems</p>
+    </div>
+    
+    <div>
+        <span><GiStarShuriken /></span>
+        <p>Real-Time Applications</p>
+    </div>
+    
+    <div>
+        <span><GiStarShuriken /></span>
+        <p>Custom Management Systems</p>
+    </div>
+                </div>
+
+                <div>
+    <h2>API & Backend Solutions</h2>
+    
+    <div>
+        <span><GiStarShuriken /></span>
+        <p>REST API Development</p>
+    </div>
+    
+    <div>
+        <span><GiStarShuriken /></span>
+        <p>API Integrations</p>
+    </div>
+    
+    <div>
+        <span><GiStarShuriken /></span>
+        <p>Authentication & Authorization</p>
+    </div>
+    
+    <div>
+        <span><GiStarShuriken /></span>
+        <p>Database Architecture</p>
+    </div>
+    
+    <div>
+        <span><GiStarShuriken /></span>
+        <p>Business Logic</p>
+    </div>
+    
+    <div>
+        <span><GiStarShuriken /></span>
+        <p>Third-Party Integrations</p>
+    </div>
+                </div>
+
+                <div>
+    <h2>User & Data Management</h2>
+    
+    <div>
+        <span><GiStarShuriken /></span>
+        <p>User Management</p>
+    </div>
+    
+    <div>
+        <span><GiStarShuriken /></span>
+        <p>Role-Based Access</p>
+    </div>
+    
+    <div>
+        <span><GiStarShuriken /></span>
+        <p>Analytics Dashboards</p>
+    </div>
+    
+    <div>
+        <span><GiStarShuriken /></span>
+        <p>Data Management</p>
+    </div>
+    
+    <div>
+        <span><GiStarShuriken /></span>
+        <p>Reporting Systems</p>
+    </div>
+    
+    <div>
+        <span><GiStarShuriken /></span>
+        <p>Activity Tracking</p>
+    </div>
+                </div>
+
+
+                <div>
+    <h2>Application Features</h2>
+    
+    <div>
+        <span><GiStarShuriken /></span>
+        <p>Search & Filtering</p>
+    </div>
+    
+    <div>
+        <span><GiStarShuriken /></span>
+        <p>Notifications</p>
+    </div>
+    
+    <div>
+        <span><GiStarShuriken /></span>
+        <p>File Management</p>
+    </div>
+    
+    <div>
+        <span><GiStarShuriken /></span>
+        <p>Payment Processing</p>
+    </div>
+    
+    <div>
+        <span><GiStarShuriken /></span>
+        <p>Email Integration</p>
+    </div>
+    
+    <div>
+        <span><GiStarShuriken /></span>
+        <p>Real-Time Updates</p>
+    </div>
                 </div>
 
             </div>
         </div>
 
         <div className='stack'>
-            <h1>You hire a <span>professional developer</span> <br /> with suitable experience</h1>
+            <h1>Built with a modern <br /> <span>MERN technology stack</span> <br /></h1>
 
             <div className='stackSec'>
 
@@ -330,10 +433,10 @@ function Servie() {
                         <div className={`questionItem ${(openSaqAns == 1)? "openA": ""}`} onClick={()=>{setOpenSaqAns(openSaqAns == 1? null : 1)}}>
                             <div className='questionHeading'>
                                 <span><IoIosArrowForward /></span>
-                                <h3>What kind of web development projects do you handle?</h3>
+                                <h3>What kind of MERN applications can RTS build?</h3>
                             </div>
                             <div className='questionAnswer'>
-                                <p>We create various websites, corporate platforms, and web applications. Whether you need a Webflow landing page or a scalable React-based platform, our developers will create customized, high-performance solutions that meet your business goals. </p>
+                                <p>We build custom SaaS platforms, CRM systems, admin dashboards, customer portals, e-commerce applications, marketplaces, management systems, internal tools, and other database-driven web applications.</p>
                             </div>
         
                         </div>
@@ -344,7 +447,7 @@ function Servie() {
                                 <h3>How long does it take to develop a website or web app?</h3>
                             </div>
                             <div className='questionAnswer'>
-                                <p>Timelines depend on the scope and functionality. We can launch a small website in <span>4 weeks</span>, but complex web platforms or SaaS dashboards take <span>10+ weeks</span>. </p>
+                                <p>Timelines depend on the application's scope, features, integrations, design requirements, and technical complexity. After reviewing your requirements, we can provide a project-specific development timeline.</p>
                             </div>
         
                         </div>
@@ -355,7 +458,7 @@ function Servie() {
                                 <h3>Can you build both the design and development of my product?</h3>
                             </div>
                             <div className='questionAnswer'>
-                                <p>Yes, that is our main strength. Arounda is a design and development partner that provides a consistent user experience, flawless interface implementation, and faster delivery because there is no gap between concept and code. This unified approach helps our clients reduce production time by 40% and ensures that the final product matches the design pixel by pixel.</p>
+                                <p>Yes, that is our main strength. RTS is a design and development partner that provides a consistent user experience, flawless interface implementation, and faster delivery because there is no gap between concept and code. This unified approach helps our clients reduce production time by 40% and ensures that the final product matches the design pixel by pixel.</p>
                             </div>
         
                         </div>
@@ -383,7 +486,7 @@ function Servie() {
                                 <h3>Do you provide post-launch support?</h3>
                             </div>
                             <div className='questionAnswer'>
-                                <p>Yes, we offer support after launch. Our team monitors performance, applies updates, and can add new features as your business grows. </p>
+                                <p>Yes. We can provide post-launch support for bug fixes, maintenance, performance improvements, integrations, and new features as your application grows.</p>
                             </div>
         
                         </div>

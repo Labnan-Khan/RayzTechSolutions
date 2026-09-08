@@ -331,23 +331,29 @@
 
 /* weOffer */
 .service .weOffer{
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
+    background-color: #cdfe2d;
+    /* color: black; */
+    padding: 50px 0px;
 }
+
 .service .weOffer > p{
     width: 50%;
     text-align: center;
+    color: rgb(81, 80, 80);
 }
 .service .weOffer h1{
     text-align: center;
+    color: black;
 }
 
 .service .weOffer .weOfferSec{
-    width: 100%;
+    width: 90%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
@@ -355,17 +361,26 @@
 .service .weOffer .weOfferSec > div{
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: space-between;
     align-items: start;
     gap: 10px;
     padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(0, 0, 0, 0.231);
+    
+    border-radius: 30px;
 }
 .service .weOffer .weOfferSec > div h2{
-    border-bottom: 1px solid rgba(255, 255, 255, 0.771);
+    border-bottom: 1px solid #c2fb06;
     width: 100%;
     padding-bottom: 20px;
     padding-left: 20px;
+    color: black;
+    min-height: 80px;
 
+}
+.service .weOffer .weOfferSec > div p{
+    color: black;
 }
 .service .weOffer .weOfferSec > div div{
     display: flex;
@@ -373,6 +388,7 @@
     gap: 10px;
     padding-left: 20px;
     padding-top: 20px;
+    color: black;
 }
 
 /* stack */
@@ -533,7 +549,13 @@
 .service .faq .faqrightSec .questionItem.openA .questionAnswer{
     display: flex;
 }
-
+@media (min-width:765px) and (max-width:960px){
+    .service .weOffer .weOfferSec{
+    
+    grid-template-columns: repeat(2, 1fr);
+    
+    }
+}
 @media (max-width:765px){
     .service h1{
         font-size: 30px;
@@ -637,12 +659,12 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 100%;
+        width: 90%;
         gap: 40px;
         margin: 20px 0px;
     }
     .service .weOffer > p{
-        width: 100%;
+        width: 90%;
     }
     .service .weOffer .weOfferSec > div{
         width: 100%;
