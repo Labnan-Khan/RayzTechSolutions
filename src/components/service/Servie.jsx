@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
 import './servie.css'
-import { FaCode, FaCss3Alt, FaHandshake, FaHeadset, FaHtml5, FaReact, FaShieldAlt, FaStar } from 'react-icons/fa'
+import { FaCode, FaCss3Alt, FaHandshake, FaHandsHelping, FaHeadset, FaHtml5, FaLaptopCode, FaReact, FaShieldAlt, FaStar } from 'react-icons/fa'
 import { GiStarShuriken } from 'react-icons/gi'
 import { IoIosArrowForward, IoLogoJavascript } from 'react-icons/io'
 import { RiNodejsLine } from 'react-icons/ri'
-import { SiExpress, SiMongodb } from 'react-icons/si'
+import { SiExpress, SiInstructure, SiMongodb, SiTestcafe } from 'react-icons/si'
+import { GoGoal } from 'react-icons/go'
+import { MdDesignServices } from 'react-icons/md'
 function Servie() {
 
         const [openSaqAns,setOpenSaqAns] = useState(false)
@@ -60,9 +62,9 @@ function Servie() {
             </div>
 
         </div>
-        
+
         <div className='weOffer'>
-            <h1>Our capabilities and what we <br />can offer in <span>web development</span></h1>
+            <h1>Our capabilities and what we <br />can offer in web development</h1>
             <p>From SaaS platforms to internal business tools, we build custom web applications around your features, users, data, and workflows.</p>
 
             <div className='weOfferSec'>
@@ -321,31 +323,37 @@ function Servie() {
             <div className='ourProcessSec'>
                 
                 <div>
+                    <h2><GoGoal /></h2>
                     <h3>Discovery & Requirements</h3>
                     <p>We understand your goals, users, workflows, features, and technical requirements before development begins.</p>
                 </div>
 
                 <div>
+                    <h2><SiInstructure /></h2>
                     <h3>Planning & Architecture</h3>
                     <p>We define the application structure, database, APIs, technology approach, and development roadmap.</p>
                 </div>
 
                 <div>
+                    <h2><MdDesignServices /></h2>
                     <h3>UI/UX Development</h3>
                     <p>We build responsive React interfaces with clear user flows and interactions designed around your product.</p>
                 </div>
 
                 <div>
+                    <h2><FaLaptopCode /></h2>
                     <h3>MERN Developmente</h3>
                     <p>We develop the frontend, backend, APIs, authentication, database logic, and core application features.</p>
                 </div>
 
                 <div>
+                    <h2><SiTestcafe /></h2>
                     <h3>Testing & Optimization</h3>
                     <p>We test functionality, responsiveness, security, API behavior, and performance before launch.</p>
                 </div>
 
                 <div>
+                    <h2><FaHandsHelping /></h2>
                     <h3>Deployment & Support</h3>
                     <p>We prepare your application for production and provide support for fixes, improvements, and future features.</p>
                 </div>
