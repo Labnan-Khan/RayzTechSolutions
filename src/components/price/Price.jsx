@@ -14,8 +14,8 @@ function Price() {
         <div className='pheroSec'>
             <div className='pheroLeft'>
                 <h1>Start <span>2x faster</span> with a transparent estimate</h1>
-                <p>Our process saves clients' project budgets by 32% and accelerates delivery by 40%.</p>
-                <button className='hoverLeftAnimationBtn'>Book a Call</button>
+                <p>We build custom MERN web applications designed around your business requirements, workflows, users, and long-term growth.</p>
+                <button className='hoverLeftAnimationBtn'>Discuss Your Project</button>
             </div>
             <div className='pheroimg'></div>
         </div>
@@ -165,19 +165,38 @@ function Price() {
                 </thead>
 
                 <tbody>
+
                     <tr>
-                        <td>Senior-level expertise</td>
+                        <td>One partner as your product grows</td>
                         <td><span className='check'><MdOutlineCheck /></span></td>
                         <td><span><IoClose /></span></td>
-                        <td><span className='check'><MdOutlineCheck /></span></td>
+                        <td><span><IoClose /></span></td>
                         
                     </tr>
 
                     <tr>
-                        <td>Specialized market knowledge</td>
+                        <td>Dedicated project communication</td>
+                        <td><span className='check'><MdOutlineCheck /></span></td>
                         <td><span className='check'><MdOutlineCheck /></span></td>
                         <td><span><IoClose /></span></td>
+                        
+                    </tr>
+
+                    <tr>
+                        <td>Continuity beyond one developer</td>
                         <td><span className='check'><MdOutlineCheck /></span></td>
+                        {/* <td><span className='check'><MdOutlineCheck /></span></td> */}
+                        <td><span><IoClose /></span></td>
+                        <td><span><IoClose /></span></td>
+                        
+                    </tr>
+
+                    <tr>
+                        <td>Custom features for complex requirements</td>
+                        <td><span className='check'><MdOutlineCheck /></span></td>
+                        {/* <td><span className='check'><MdOutlineCheck /></span></td> */}
+                        <td><span><IoClose /></span></td>
+                        <td><span><IoClose /></span></td>
                         
                     </tr>
 
@@ -196,7 +215,7 @@ function Price() {
                     </tr>
 
                     <tr>
-                        <td>3-day free trial</td>
+                        <td>Testing & quality assurance</td>
                         <td><span className='check'><MdOutlineCheck /></span></td>
                         <td><span ><IoClose /></span></td>
                         <td><span ><IoClose /></span></td>
@@ -238,10 +257,11 @@ function Price() {
                     </tr>
 
                     <tr>
-                        <td>Adherence to accessibility and compliance rules</td>
+                        <td>Security-focused development practices</td>
                         <td><span className='check'><MdOutlineCheck /></span></td>
                         <td><span ><IoClose /></span></td>
-                        <td><span className='check'><MdOutlineCheck /></span></td>
+                        <td><span ><IoClose /></span></td>
+                        {/* <td><span className='check'><MdOutlineCheck /></span></td> */}
                     </tr>
 
                     <tr>
