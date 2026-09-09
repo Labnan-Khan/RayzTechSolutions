@@ -651,6 +651,9 @@
     .service .serviceHeroSec .sHerotopSec .svideoSec{
         width: 80%;
     }
+    .service .serviceHeroSec  .sHeroBSec{
+        width: 90%;
+    }
     .service .serviceHeroSec  .sHeroBSec h1,
     .hoverText,
 .hoverText::after{
