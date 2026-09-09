@@ -652,12 +652,12 @@
         width: 80%;
     }
     .service .serviceHeroSec  .sHeroBSec{
-        width: 90%;
+        border: none;
     }
     .service .serviceHeroSec  .sHeroBSec h1,
     .hoverText,
 .hoverText::after{
-    font-size: 40px;
+    font-size: 30px;
 }
 
     /* ourPromise */
