@@ -8,11 +8,10 @@
     padding: 40px 0px;
 }
 .service h1 span{
-    color: greenyellow;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 500;
 
 }
+
+
 .service .serviceHeroSec{
     width: 90%;
     display: flex;
@@ -91,9 +90,9 @@
 }
 
 .service .serviceHeroSec .sHeroBSec{
-    width: 100%;
+    /* width: fit-content; */
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 30px;
     text-align: center;
@@ -101,6 +100,7 @@
     padding: 30px;
     margin-top: 30px;
     border-radius: 30px;
+    cursor:none;
     /* background-color: rgba(172, 255, 47, 0.12); */
     /* box-shadow: inset 0px 0px 20px rgb(172, 255, 47); */
 
@@ -113,12 +113,63 @@
     gap: 10px;
 
 }
-.service .serviceHeroSec .sHeroBSec div h3{
-    font-size: 40px;
+.service .serviceHeroSec .sHeroBSec  h1 span{
+    /* font-size: 80px; */
+    font-family: serif;
+    color: rgba(255, 255, 255, 0.058);
 }
-.service .serviceHeroSec .sHeroBSec div p{
-    color: rgb(128, 127, 127);
+
+
+.hoverText {
+  --x: 50%;
+  --y: 50%;
+
+  position: relative;
+  display: inline-block;
+  font-size: 150px;
+  font-family: serif;
+  color: #555;
+
+  margin: 0;
 }
+
+.hoverText span {
+  position: relative;
+  z-index: 1;
+}
+
+.hoverText::after {
+  content: "RayzTechSolutions";
+
+  position: absolute;
+  inset: 0;
+
+  color: #cdfe2d;
+
+  pointer-events: none;
+  font-size: 150px;
+  z-index: 2;
+
+  clip-path: circle(0px at var(--x) var(--y));
+}
+.hoverText:hover::after {
+  clip-path: circle(70px at var(--x) var(--y));
+}
+@media (min-width:1030px) and (max-width:1270px){
+
+.hoverText,
+.hoverText::after{
+    font-size: 120px;
+}
+}
+@media (min-width:765px) and (max-width:1030px){
+
+.hoverText,
+.hoverText::after{
+    font-size: 80px;
+}
+}
+
 
 /* ourPromise */
 .service .ourPromise{
@@ -600,34 +651,11 @@
     .service .serviceHeroSec .sHerotopSec .svideoSec{
         width: 80%;
     }
-    .service .serviceHeroSec  .sHeroBSec{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        border: 0px;
-        /* box-shadow: none; */
-        padding: 30px 0px;
-
-    }
-    .service .serviceHeroSec .sHeroBSec div {
-        
-        width: 100%;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        border-bottom: 1px solid rgba(172, 255, 47, 0.433);
-        
-        padding: 20px;
-    }
-    .service .serviceHeroSec .sHeroBSec div:last-child{
-        border-bottom: none;
-        padding-bottom: 0px;
-    }
-    .service .serviceHeroSec .sHeroBSec div p{
-        font-size: 12px;
-        width: 100%;
-        text-align: start;
-    }
+    .service .serviceHeroSec  .sHeroBSec h1,
+    .hoverText,
+.hoverText::after{
+    font-size: 40px;
+}
 
     /* ourPromise */
     .service .ourPromise .ourPromiseSec{

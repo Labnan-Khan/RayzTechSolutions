@@ -14,6 +14,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { SlGraph } from 'react-icons/sl'
 import { WiLightning } from 'react-icons/wi'
+import { ShimmeringText } from "@/components/ui/shimmering-text";
 function HomePage() {
 
   useEffect(() => {
@@ -114,10 +115,10 @@ useEffect(()=>{
         <div className='heroHeading'>
           <div className='heroheadingLeft'>
           <p data-aos="fade-right"><span></span>MERN Stack Web Application Development</p>
-          <div className='herosectionH1' data-aos="fade-right">
+          <div className='herosectionH1'>
             <h1>From idea to launch,</h1>
             {/* <h1> we build <span>websites  <span className='headingicon'><RiStackFill /></span> <span className='headingicon'><FaMobileAlt /></span> <span className='headingicon'><TiThLargeOutline /></span></span></h1> */}
-            <h1> we build <span>Web Applications</span>  </h1>
+            <h1> we build {""} <ShimmeringText text="Web Applications" duration={1}   wave={true}   color="#cdfe2d"   shimmeringColor="#ffffff"   className="shimmerText"/> </h1>
             <h1>that perform.</h1>
           </div>
 

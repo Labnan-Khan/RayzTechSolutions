@@ -74,63 +74,15 @@
     font-size: 50px;
     width: 100%;
 }
-
-
-/* .homePage .homeHero .heroHeading .heroheadingLeft .herosectionH1 h1:nth-child(2) span{
-    background-color: rgba(255, 255, 255, 0.187);
-    border-radius: 30px;
-    padding: 0px 5px;
-    font-size: 60px;
-    font-weight: 100;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: fit-content;
-    height: 70px;
-
-} */
-
-.homePage .homeHero .heroHeading .heroheadingLeft .herosectionH1 h1 span .headingicon{
-    position: absolute;
-    font-size: 25px;
-    color: greenyellow;
-    border-radius: 50%;
-    background-color: rgb(117, 117, 117);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
-    width: 40px;
-    height: 40px;
-    opacity: 0;
-    transition: all 0.3s ease;
-
-
- }
-.homePage .homeHero .heroHeading .heroheadingLeft .herosectionH1 h1 span .headingicon:nth-child(1){
-    right: 20px;
-    bottom: -30px;
-    border-top-left-radius: 0px;
-    transform: translateX(20px);
+.homePage .homeHero .heroHeading .heroheadingLeft h1 span{
+    font-family: 'Times New Roman', Times, serif;
 }
-.homePage .homeHero .heroHeading .heroheadingLeft .herosectionH1 h1 span .headingicon:nth-child(2){
-    left: 0px;
-    top: -20px;
-    border-bottom-right-radius: 0px;
-    transform: translateX(-20px);
-}
-.homePage .homeHero .heroHeading .heroheadingLeft .herosectionH1 h1 span .headingicon:nth-child(3){
-    right: 0px;
-    top: -20px;
-    border-bottom-left-radius: 0px;
-    transform: translateY(-20px);
-}
- 
 
-.homePage .homeHero .heroHeading .heroheadingLeft .herosectionH1 h1:nth-child(2) span:hover .headingicon{
-    transform: translate(0px);
-    opacity: 1;
-}
+
+
+
+
+
 
 
 .homePage .homeHero .heroMid{

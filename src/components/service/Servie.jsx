@@ -22,7 +22,9 @@ function Servie() {
                         <span>CRM</span>
                         <span>Web Apps</span>
                     </div>
-                    <h1>MERN Stack <span>Web Application</span> Development </h1>
+                    <h1>
+                        MERN Stack <span>Web Application</span> Development
+                    </h1>
                     <p>We build custom, scalable, and secure web applications around your business requirements, users, workflows, and goals.</p>
                     <div className='stBottomRow'>
                         <div>
@@ -47,7 +49,23 @@ function Servie() {
             </div>
 
             <div className='sHeroBSec'>
-                <div>
+                <h1 className="hoverText"
+                    onMouseMove={(e) => {
+                    const rect = e.currentTarget.getBoundingClientRect();
+
+                    e.currentTarget.style.setProperty(
+                    "--x",
+                    `${e.clientX - rect.left}px`
+                    );
+
+                    e.currentTarget.style.setProperty(
+                    "--y",
+                    `${e.clientY - rect.top}px`
+                    );
+                }}>
+                    <span>RayzTechSolutions </span>
+                </h1>
+                {/* <div>
                     <h3>205+</h3>
                     <p>Applications designed around your business requirements.</p>
                 </div>
@@ -58,7 +76,7 @@ function Servie() {
                 <div>
                     <h3>$1B+</h3>
                     <p>Architecture prepared for future features and business growth.</p>
-                </div>
+                </div> */}
             </div>
 
         </div>

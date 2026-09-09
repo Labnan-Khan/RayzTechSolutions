@@ -1,30 +1,62 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './price.css'
 import { FaCheck } from 'react-icons/fa'
 import { IoIosArrowForward, IoMdCheckmark } from 'react-icons/io'
 import { MdOutlineCheck } from 'react-icons/md'
 import { IoClose } from 'react-icons/io5'
+import Aos from 'aos'
 
 function Price() {
+
+    useEffect(() => {
+      Aos.init({
+        duration: 1500,
+        once: true,
+        easing: "ease-in-out",
+        offset: 80,
+      });
+    }, []);
+
     const [openSaqAns,setOpenSaqAns] = useState(false)
-    
+    const [text, setText] = useState("");
+
+  const fullText = "Start 2x faster with a transparent estimate";
+
+  useEffect(() => {
+    let index = 0;
+
+    const typing = setInterval(() => {
+      setText(fullText.slice(0, index + 1));
+      index++;
+
+      if (index === fullText.length) {
+        clearInterval(typing);
+      }
+    }, 40);
+
+    return () => clearInterval(typing);
+  }, []);
+
+  const firstPart = text.slice(0, 6); // "Start "
+  const highlightedPart = text.slice(6, 15); // "2x faster"
+  const lastPart = text.slice(15);
   return (
     <div className='pricePage'>
 
         <div className='pheroSec'>
             <div className='pheroLeft'>
-                <h1>Start <span>2x faster</span> with a transparent estimate</h1>
-                <p>We build custom MERN web applications designed around your business requirements, workflows, users, and long-term growth.</p>
-                <button className='hoverLeftAnimationBtn'>Discuss Your Project</button>
+                <h1>{firstPart} <span>{highlightedPart}</span>{lastPart}</h1>
+                <p data-aos="fade-up">We build custom MERN web applications designed around your business requirements, workflows, users, and long-term growth.</p>
+                <button className='hoverLeftAnimationBtn' data-aos="fade-up">Discuss Your Project</button>
             </div>
-            <div className='pheroimg'></div>
+            <div className='pheroimg' data-aos="fade-up"></div>
         </div>
 
         <div className='priceOption'>
-            <h1><span>Flexible</span> engagement <br /> options for every stage</h1>
-            <p className='headingp'>Choose the level of design involvement that fits your product goals.</p>
+            <h1 data-aos="fade-up"><span>Flexible</span> engagement <br /> options for every stage</h1>
+            <p className='headingp' data-aos="fade-up">Choose the level of design involvement that fits your product goals.</p>
 
-            <div className='priceOptionSection'>
+            <div className='priceOptionSection' data-aos="fade-up">
                 <div className='switchOptionBtn'>
                     <p>Design</p>
                     <button className='isDevelopment'><span></span></button>
@@ -33,7 +65,7 @@ function Price() {
 
                 <div className='priceOptionDisplay'>
 
-                    <div className='displayPriceItem'>
+                    <div className='displayPriceItem' data-aos="fade-up">
                         <h3>Part-Time Designer</h3>
                         <p>Best for early validation and focused design tasks</p>
                         <button className='hoverLeftAnimationBtn'>Start now</button>
@@ -70,7 +102,7 @@ function Price() {
                         </div>
                     </div>
 
-                    <div className='displayPriceItem'>
+                    <div className='displayPriceItem' data-aos="fade-up">
                         <h3>Part-Time Designer</h3>
                         <p>Best for early validation and focused design tasks</p>
                         <button className='hoverLeftAnimationBtn'>Start now</button>
@@ -108,7 +140,7 @@ function Price() {
                     </div>
 
 
-                    <div className='displayPriceItem'>
+                    <div className='displayPriceItem' data-aos="fade-up">
                         <h3>Part-Time Designer</h3>
                         <p>Best for early validation and focused design tasks</p>
                         <button className='hoverLeftAnimationBtn'>Start now</button>
@@ -151,10 +183,10 @@ function Price() {
 
         <div className='pComparison'>
             <div>
-                <h1>A сlear breakdown <br/> to  <span>help you choose</span></h1>
+                <h1 data-aos="fade-up">A сlear breakdown <br/> to  <span>help you choose</span></h1>
                 {/* <p>See why businesses choose RayzTechSolutions for reliable, scalable, and high-quality digital solutions.</p> */}
             </div>
-            <table>
+            <table data-aos="fade-up">
                 <thead>
                     <tr className='firsttr'>
                         <th>Feature</th>
@@ -283,7 +315,7 @@ function Price() {
 
         <div className='saq'>
 
-            <div className='saqLeftSec'>
+            <div className='saqLeftSec' data-aos="fade-right">
                 <h1><span>FAQ</span></h1>
                 <div className='saqleftFounder'>
                     <div className='founderSec'>
@@ -297,8 +329,8 @@ function Price() {
                     <button className='hoverLeftAnimationBtn'>Book a Call</button>
                 </div>
             </div>
-            <h1 className='faqforMobile'><span>FAQ</span></h1>
-            <div className='saqrightSec'>
+            <h1 className='faqforMobile' data-aos="fade-up"><span>FAQ</span></h1>
+            <div className='saqrightSec' data-aos="fade-up">
 
                 <div className={`questionItem ${(openSaqAns == 1)? "openA": ""}`} onClick={()=>{setOpenSaqAns(openSaqAns == 1? null : 1)}}>
                     <div className='questionHeading'>
@@ -360,7 +392,7 @@ function Price() {
             </div>
         </div>
 
-        <div className='pricePageLastDiv'>
+        <div className='pricePageLastDiv' data-aos="fade-up">
             <h1>Estimate with <span>clarity</span>, launch with <span>confidence</span></h1>
             <p>Gain full cost visibility through our precise, transparent pricing model.</p>
             <button className='hoverLeftAnimationBtn'>Book a Call</button>
