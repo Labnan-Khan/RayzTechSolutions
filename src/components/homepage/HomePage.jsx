@@ -18,8 +18,10 @@ function HomePage() {
 
   useEffect(() => {
   AOS.init({
-    duration: 1000,
+    duration: 1500,
     once: true,
+    easing: "ease-in-out",
+    offset: 80,
   });
 }, []);
 
@@ -216,29 +218,29 @@ useEffect(()=>{
         <div className='homeServiesSection' data-aos="fade-up">
 
           <div className='homeDesignSection' data-aos="fade-up">
-            <h3 data-aos="fade-up">Design</h3>
+            <h3 >Design</h3>
             
-            <div data-aos="fade-up">
+            <div >
               <p>UI/UX Design</p>
               <span><IoMdArrowForward /></span>
             </div>
 
-            <div data-aos="fade-up">
+            <div >
               <p>Web Design</p>
               <span><IoMdArrowForward /></span>
             </div>
 
-            <div data-aos="fade-up">
+            <div >
               <p>Mobile App Design</p>
               <span><IoMdArrowForward /></span>
             </div>
 
-            <div data-aos="fade-up">
+            <div >
               <p>Website Redesign</p>
               <span><IoMdArrowForward /></span>
             </div>
 
-            <div data-aos="fade-up">
+            <div >
               <p>UX/UI Audit</p>
               <span><IoMdArrowForward /></span>
             </div>
@@ -247,29 +249,29 @@ useEffect(()=>{
           
 
           <div className='homeDevelopSection' data-aos="fade-up">
-            <h3 data-aos="fade-up">Development</h3>
+            <h3 >Development</h3>
             
-            <div data-aos="fade-up">
+            <div>
               <p>Web Development</p>
               <span><IoMdArrowForward /></span>
             </div>
 
-            <div data-aos="fade-up">
+            <div>
               <p>MVP Development</p>
               <span><IoMdArrowForward /></span>
             </div>
 
-            <div data-aos="fade-up">
+            <div >
               <p>WebFlow Development</p>
               <span><IoMdArrowForward /></span>
             </div>
 
-            <div data-aos="fade-up">
+            <div >
               <p>Landing Page</p>
               <span><IoMdArrowForward /></span>
             </div>
 
-            <div data-aos="fade-up">
+            <div >
               <p>Mobile Development</p>
               <span><IoMdArrowForward /></span>
             </div>
@@ -354,9 +356,9 @@ useEffect(()=>{
 
       </div>
       
-      <div className='homepageAchivment' data-aos="fade-up">
-        <h1>Why Build With RayzTechSolutions?</h1>
-        <p>We focus on building software that works—not simply delivering code.</p> 
+      <div className='homepageAchivment'>
+        <h1 data-aos="fade-up">Why Build With RayzTechSolutions?</h1>
+        <p data-aos="fade-up">We focus on building software that works—not simply delivering code.</p> 
           <div className='homeachivSection'>
 
             {/* <div className='homeachivItem'>
@@ -365,7 +367,7 @@ useEffect(()=>{
             </div> */}
             
 
-            <div className='homeachivItem' data-aos="fade-up">
+            <div className='homeachivItem' data-aos="fade-up" data-aos-duration="1500" >
               <div><RiBuilding2Line /></div>
               <h3>Built Around Your Requirements</h3>
               <p>Every application is developed according to your business logic, users, and goals.</p>

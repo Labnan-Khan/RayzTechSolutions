@@ -814,9 +814,10 @@
     padding: 50px;
     gap: 20px;
     position: relative;
-    transition: all 0.3s ease;
     &:hover{
         transform: scale(0.98);
+
+    transition: all 0.3s ease;
     }
 }
 .homePage .homepageAchivment .homeachivSection .homeachivItem div{
@@ -1048,13 +1049,12 @@
     color: rgb(167, 166, 166);
     border-bottom: 1px solid rgba(153, 180, 113, 0.061);
     padding: 30px 0px;
-    transition: all 0.3s ease;
     padding: 30px;
+    padding-left: 50px;
     &:hover{
         color: black;
         background-color: rgba(83, 82, 82, 0.394);
-        /* padding: 30px 30px; */
-        padding-left: 50px;
+        
         border-bottom-left-radius: 20px;
 
     }
@@ -1067,6 +1067,7 @@
     gap: 5px;
     font-size: 20px;
     position: relative;
+    transition: all 0.3s ease;
 
 }
 .homePage .homepageOurExperance .ourExperanceRightSec .ourExperanceRightItemSec .ourExperanceRightItem div h3{
@@ -1087,19 +1088,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: rotate(-50deg);
+    /* transform: rotate(-50deg); */
     /* width: 0px; */
     font-size: 30px;
     color: greenyellow;
     position: absolute;
-    bottom: -30px;
+    bottom: 0px;
     left: -40px;
     transition: all 0.3s ease;
     opacity: 0;
 }
 .homePage .homepageOurExperance .ourExperanceRightSec .ourExperanceRightItemSec .ourExperanceRightItem:hover div span{
-    bottom: -10px;
-    left: -30px;
+    /* bottom: -10px; */
+    left: -20px;
     opacity: 1;
 }
 
