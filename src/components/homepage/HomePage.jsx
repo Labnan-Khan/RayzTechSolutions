@@ -5,13 +5,15 @@ import { IoMdArrowForward } from 'react-icons/io'
 import { FaArrowLeft, FaArrowRight, FaCode, FaExpandArrowsAlt, FaLinkedinIn, FaMobileAlt, FaNodeJs, FaReact, FaRocket, FaShieldAlt, FaSlidersH, FaStar, FaTachometerAlt } from 'react-icons/fa'
 import { DiReact } from 'react-icons/di'
 import { AiOutlineJavaScript } from 'react-icons/ai'
-import { SiDevelopmentcontainers, SiMongodb } from 'react-icons/si'
+import { SiBuildkite, SiDevelopmentcontainers, SiFusionauth, SiInstructure, SiMongodb } from 'react-icons/si'
 import { GoArrowRight } from 'react-icons/go'
-import { RiStackFill } from 'react-icons/ri'
+import { RiBuilding2Line, RiStackFill } from 'react-icons/ri'
 import { TiThLargeOutline } from 'react-icons/ti'
 import { BiLogoMongodb } from 'react-icons/bi'
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { SlGraph } from 'react-icons/sl'
+import { WiLightning } from 'react-icons/wi'
 function HomePage() {
 
   useEffect(() => {
@@ -87,7 +89,21 @@ const homePageReviewArray = [
   "Very happy with the final website. Modern design, smooth performance, and excellent communication from start to finish."
 ]
 const [changeReview,setChangeReview]= useState(0)
+const [typedReview, setTypedReview] = useState("");
+useEffect(()=>{
+  const text = homePageReviewArray[changeReview];
+  let index = 0;
+  setTypedReview("");
 
+  const typingInterval = setInterval(()=>{
+    setTypedReview(text.slice(0,index +1));
+    index++;
+    if(index == text.length){
+      clearInterval(typingInterval);
+    }
+  },30)
+  return () => clearInterval(typingInterval);
+}, [changeReview])
   return (
     <div className='homePage'>
 
@@ -138,25 +154,25 @@ const [changeReview,setChangeReview]= useState(0)
           <div className='resultHeadingleftImg' data-aos="fade-right"></div>
 
           <div className='resultHeadingRightSec'>
-            <h1>Your Idea. Our Development <span>Expertise</span>.</h1>
-            <p>A great idea needs more than code. It needs the right architecture, technology, and development approach.</p>
-            <p>We turn your requirements into production-ready web applications that are built to perform today and scale with your business tomorrow.</p>
+            <h1 data-aos="fade-up">Your Idea. Our Development <span>Expertise</span>.</h1>
+            <p data-aos="fade-up">A great idea needs more than code. It needs the right architecture, technology, and development approach.</p>
+            <p data-aos="fade-up">We turn your requirements into production-ready web applications that are built to perform today and scale with your business tomorrow.</p>
             <div className='homeRuslut2ndSection'>
 
-            <div>
+            <div data-aos="fade-up">
               {/* <span>{"{1}"}</span> */}
               <h4>Understand the Problem</h4>
               <p>We start by understanding your business, users, workflows, and goals.</p>
             </div>
           
 
-          <div>
+          <div data-aos="fade-up">
             {/* <span>{"{2}"}</span> */}
             <h4>Build the Right Solution</h4>
             <p>We develop the application around your actual requirements—not a one-size-fits-all template.</p>
           </div>
 
-          <div>
+          <div data-aos="fade-up">
             {/* <span>{"{3}"}</span> */}
             <h4>Deliver for the Long Term</h4>
             <p>We build clean, scalable systems that can evolve as your business grows.</p>
@@ -194,35 +210,35 @@ const [changeReview,setChangeReview]= useState(0)
       </div>
 
       <div className='homeServies'>
-        <h1>Full-Stack Web Development Services We Offer</h1>
-        <p>Everything you need to build, launch, and grow a modern web application.</p>
+        <h1 data-aos="fade-up">Full-Stack Web Development Services We Offer</h1>
+        <p data-aos="fade-up">Everything you need to build, launch, and grow a modern web application.</p>
 
-        <div className='homeServiesSection'>
+        <div className='homeServiesSection' data-aos="fade-up">
 
-          <div className='homeDesignSection'>
-            <h3>Design</h3>
+          <div className='homeDesignSection' data-aos="fade-up">
+            <h3 data-aos="fade-up">Design</h3>
             
-            <div>
+            <div data-aos="fade-up">
               <p>UI/UX Design</p>
               <span><IoMdArrowForward /></span>
             </div>
 
-            <div>
+            <div data-aos="fade-up">
               <p>Web Design</p>
               <span><IoMdArrowForward /></span>
             </div>
 
-            <div>
+            <div data-aos="fade-up">
               <p>Mobile App Design</p>
               <span><IoMdArrowForward /></span>
             </div>
 
-            <div>
+            <div data-aos="fade-up">
               <p>Website Redesign</p>
               <span><IoMdArrowForward /></span>
             </div>
 
-            <div>
+            <div data-aos="fade-up">
               <p>UX/UI Audit</p>
               <span><IoMdArrowForward /></span>
             </div>
@@ -230,30 +246,30 @@ const [changeReview,setChangeReview]= useState(0)
           </div>
           
 
-          <div className='homeDevelopSection'>
-            <h3>Development</h3>
+          <div className='homeDevelopSection' data-aos="fade-up">
+            <h3 data-aos="fade-up">Development</h3>
             
-            <div>
+            <div data-aos="fade-up">
               <p>Web Development</p>
               <span><IoMdArrowForward /></span>
             </div>
 
-            <div>
+            <div data-aos="fade-up">
               <p>MVP Development</p>
               <span><IoMdArrowForward /></span>
             </div>
 
-            <div>
+            <div data-aos="fade-up">
               <p>WebFlow Development</p>
               <span><IoMdArrowForward /></span>
             </div>
 
-            <div>
+            <div data-aos="fade-up">
               <p>Landing Page</p>
               <span><IoMdArrowForward /></span>
             </div>
 
-            <div>
+            <div data-aos="fade-up">
               <p>Mobile Development</p>
               <span><IoMdArrowForward /></span>
             </div>
@@ -262,7 +278,7 @@ const [changeReview,setChangeReview]= useState(0)
 
         </div>
 
-        <div className='homeserviesBtnSection'>
+        <div className='homeserviesBtnSection' data-aos="fade-up">
           <div className='seoSection'>
             <div> <span><FaLinkedinIn /></span></div>
             <div>
@@ -338,7 +354,7 @@ const [changeReview,setChangeReview]= useState(0)
 
       </div>
       
-      <div className='homepageAchivment'>
+      <div className='homepageAchivment' data-aos="fade-up">
         <h1>Why Build With RayzTechSolutions?</h1>
         <p>We focus on building software that works—not simply delivering code.</p> 
           <div className='homeachivSection'>
@@ -349,43 +365,43 @@ const [changeReview,setChangeReview]= useState(0)
             </div> */}
             
 
-            <div className='homeachivItem'>
-              <div><FaSlidersH /></div>
+            <div className='homeachivItem' data-aos="fade-up">
+              <div><RiBuilding2Line /></div>
               <h3>Built Around Your Requirements</h3>
               <p>Every application is developed according to your business logic, users, and goals.</p>
             </div>
 
-            <div className='homeachivItem'>
-              <div><FaExpandArrowsAlt /></div>
+            <div className='homeachivItem' data-aos="fade-up">
+              <div><SiInstructure /></div>
               <h3>Scalable From Day One</h3>
               <p>We structure your application so new features, users, and functionality can be added without rebuilding everything.</p>
             </div>
 
-            <div className='homeachivItem'>
-              <div><FaTachometerAlt /></div>
+            <div className='homeachivItem' data-aos="fade-up">
+              <div><WiLightning /></div>
               <h3>Performance Focused</h3>
               <p>Fast interfaces, efficient APIs, optimized data handling, and responsive experiences.</p>
             </div>
 
-            <div className='homeachivItem'>
-              <div><FaCode /></div>
+            <div className='homeachivItem' data-aos="fade-up">
+              <div><SlGraph /></div>
               <h3>Clean & Maintainable Code</h3>
               <p>Well-structured code makes your application easier to maintain, improve, and scale.</p>
             </div>
 
-            <div className='homeachivItem'>
-              <div><FaShieldAlt /></div>
+            <div className='homeachivItem' data-aos="fade-up">
+              <div><SiFusionauth /></div>
               <h3>Secure by Design</h3>
               <p>Authentication, authorization, protected routes, and secure API communication.</p>
             </div>
 
-            <div className='homeachivItem'>
-              <div><FaRocket /></div>
+            <div className='homeachivItem' data-aos="fade-up">
+              <div><SiBuildkite /></div>
               <h3>Built for the Long Run</h3>
               <p>We don't just build and disappear. Your application can continue evolving as your business grows.</p>
             </div>
 
-            <div className='homeachivItem'>
+            <div className='homeachivItem' data-aos="fade-up">
               
             </div>
 
@@ -412,7 +428,7 @@ const [changeReview,setChangeReview]= useState(0)
               <span className={changeReview  == 3? "hideBtn": ""} onClick={()=>{changeReview < 3 ? setChangeReview(changeReview+1): setChangeReview(4)}}>{changeReview < 3? <FaArrowRight />: ""}</span>
             </div>
 
-            <p className='reviewMainP'> “{homePageReviewArray[changeReview]}”</p>
+            <p className='reviewMainP'> “{typedReview}”</p>
             
             <div className='bottomSection'>
 
@@ -447,14 +463,14 @@ const [changeReview,setChangeReview]= useState(0)
       </div>
 
       <div className='homepageOurExperance'>
-        <div className='ourExperanceimg'></div>
+        <div className='ourExperanceimg' data-aos="fade-right"></div>
 
         <div className='ourExperanceRightSec'>
-          <h1>What We Build</h1>
-          <p className='mainP'>Whatever your business model, we build the web application behind it.</p>
+          <h1 data-aos="fade-left">What We Build</h1>
+          <p className='mainP' data-aos="fade-left">Whatever your business model, we build the web application behind it.</p>
           <div className='ourExperanceRightItemSec'>
 
-            <div className='ourExperanceRightItem'>
+            <div className='ourExperanceRightItem' data-aos="fade-up">
                 <div>
                   <span><GoArrowRight /></span>
                   <h3>SaaS Applications</h3>
@@ -462,7 +478,7 @@ const [changeReview,setChangeReview]= useState(0)
                 <p>Multi-user platforms, subscriptions, dashboards, authentication, user management, and scalable application architecture.</p>
             </div>
 
-            <div className='ourExperanceRightItem'>
+            <div className='ourExperanceRightItem' data-aos="fade-up">
                 <div>
                   <span><GoArrowRight /></span>
                   <h3>Business Applications</h3>
@@ -470,7 +486,7 @@ const [changeReview,setChangeReview]= useState(0)
                 <p>Custom systems that manage operations, automate workflows, organize data, and improve business processes.</p>
             </div>
 
-            <div className='ourExperanceRightItem'>
+            <div className='ourExperanceRightItem' data-aos="fade-up">
               <div>
                   <span><GoArrowRight /></span>
                   <h3>E-Commerce Platforms</h3>
@@ -478,7 +494,7 @@ const [changeReview,setChangeReview]= useState(0)
                 <p>Product catalogs, shopping carts, orders, payments, customer accounts, and powerful admin systems.</p>
             </div>
 
-            <div className='ourExperanceRightItem'>
+            <div className='ourExperanceRightItem' data-aos="fade-up">
               <div>
                   <span><GoArrowRight /></span>
                   <h3>Admin Dashboards</h3>
@@ -486,7 +502,7 @@ const [changeReview,setChangeReview]= useState(0)
                 <p>Centralized systems for managing users, products, content, orders, analytics, and application data.</p>
             </div>
 
-            <div className='ourExperanceRightItem'>
+            <div className='ourExperanceRightItem' data-aos="fade-up">
               <div>
                   <span><GoArrowRight /></span>
                   <h3>Marketplace Platforms</h3>
@@ -494,7 +510,7 @@ const [changeReview,setChangeReview]= useState(0)
                 <p>Applications that connect buyers, sellers, service providers, or businesses through one platform.</p>
             </div>
 
-            <div className='ourExperanceRightItem'>
+            <div className='ourExperanceRightItem' data-aos="fade-up">
                 <div>
                   <span><GoArrowRight /></span>
                   <h3>Custom Web Applications</h3>

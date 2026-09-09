@@ -895,9 +895,10 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
     position: relative;
 }
+
 .homePage .homepageReviews .reviewSection .reviewRightSec p{
     color: black;
 }
@@ -942,6 +943,7 @@
     font-size: 30px;
     padding-top: 50px;
     font-weight: 100;
+    min-height: 200px;
 }
 .homePage .homepageReviews .reviewSection .reviewRightSec .bottomSection{
     width: 90%;
