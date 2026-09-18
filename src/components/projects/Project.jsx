@@ -1,6 +1,7 @@
 import React from 'react'
 import './project.css'
 import { FaArrowRight } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 function Project() {
     const itemArray = [
         {projectName:"Rayzmedia", projectUrl:"https://rayzmedia.com"},
@@ -21,10 +22,10 @@ function Project() {
             </div>
             <div>
                 <p>EXPLORE MORE</p>
-                <button>Case Study</button>
-                <button>About Us</button>
+                <Link to="/services"><button>Our Services</button></Link>
+                <Link to="/price"><button>Our Pricing</button></Link>
             </div>
-            <button className='hoverLeftAnimationBtn'>Book A call</button>
+            <Link to="/contactUs"><button className='hoverLeftAnimationBtn'>Book A call</button></Link>
         </div>
 
         <div className='projectRight'>

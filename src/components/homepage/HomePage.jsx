@@ -15,6 +15,7 @@ import "aos/dist/aos.css";
 import { SlGraph } from 'react-icons/sl'
 import { WiLightning } from 'react-icons/wi'
 import { ShimmeringText } from "@/components/ui/shimmering-text";
+import { Link } from 'react-router-dom'
 function HomePage() {
 
   useEffect(() => {
@@ -138,7 +139,7 @@ useEffect(()=>{
             <div className='heromidItem'>
               <p>{"{/}"}</p>
               <p>Built around your business. Engineered for growth</p>
-              <button>Start a Project</button>
+              <Link to="/contactUs"><button>Start a Project</button></Link> 
             </div>
 
           </div>
@@ -285,12 +286,12 @@ useEffect(()=>{
           <div className='seoSection'>
             <div> <span><FaLinkedinIn /></span></div>
             <div>
-              <h3>Vladislav Gavriluk</h3>
+              <h3>Asfand Kakar</h3>
               <p>Founder & CEO</p>
             </div>
           </div>
           <p>Grow revenue and maximize ROI with our product design and development services.</p>
-          <button>Book a Call</button>
+          <Link to="/services"><button>Explore All Services</button></Link> 
         </div>
 
       </div>
@@ -327,7 +328,7 @@ useEffect(()=>{
           </div>
 
           <div>
-            <button>About Us</button>
+            <Link to="/contactUs"><button>Send Message</button></Link>
           </div>
         </div>
 
@@ -421,7 +422,7 @@ useEffect(()=>{
             <div className={changeReview == 0? "active" : ""} onClick={()=>{setChangeReview(0)}}>Rayzmedia</div>
             <div className={changeReview == 1? "active" : ""} onClick={()=>{setChangeReview(1)}}>Boriroots</div>
             <div className={changeReview == 2? "active" : ""} onClick={()=>{setChangeReview(2)}}>khogyar</div>
-            <div className={changeReview == 3? "active" : ""} onClick={()=>{setChangeReview(3)}}>RTS</div>
+            <div className={changeReview == 3? "active" : ""} onClick={()=>{setChangeReview(3)}}>GILZOR</div>
           </div>
 
           <div className='reviewRightSec'>
@@ -525,7 +526,7 @@ useEffect(()=>{
         </div>
       </div>
 
-      <div className='homepageBlog'>
+      {/* <div className='homepageBlog'>
         <h1>Get real growth insights and proven tactics for digital success </h1>
         <button>Read more articles</button>
         <div className='blogSection'>
@@ -576,12 +577,12 @@ useEffect(()=>{
           </div>
 
         </div>
-      </div>
+      </div> */}
 
       <div className='bookNow'>
         <h1>Have a Web Application Idea?</h1>
         <p>Tell us what you're building, what problem you're solving, and where you want to take it. We'll help turn your idea into a scalable web application.</p>
-        <button>Start Your Project</button>
+        <Link to="/contactUs"><button className='hoverLeftAnimationBtn'>Start Your Project</button></Link>
       </div>
 
     </div>

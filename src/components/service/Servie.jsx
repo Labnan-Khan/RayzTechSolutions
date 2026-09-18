@@ -7,6 +7,7 @@ import { RiNodejsLine } from 'react-icons/ri'
 import { SiExpress, SiInstructure, SiMongodb, SiTestcafe } from 'react-icons/si'
 import { GoGoal } from 'react-icons/go'
 import { MdDesignServices } from 'react-icons/md'
+import { Link } from 'react-router-dom'
 function Servie() {
 
         const [openSaqAns,setOpenSaqAns] = useState(false)
@@ -28,8 +29,8 @@ function Servie() {
                     <p>We build custom, scalable, and secure web applications around your business requirements, users, workflows, and goals.</p>
                     <div className='stBottomRow'>
                         <div>
-                            <button className='hoverLeftAnimationBtn'>Start a Project</button>
-                            <button className='hoverLeftAnimationBtn'>View Our Work</button>
+                            <Link to="/contactUs"><button className='hoverLeftAnimationBtn'>Start a Project</button></Link>
+                            <Link to="/project"><button className='hoverLeftAnimationBtn'>View Our Work</button></Link>
                         </div>
                         <div>
                             <span><FaStar /></span>
@@ -44,7 +45,7 @@ function Servie() {
                 </div>
 
                 <div className='svideoSec'>
-                    video
+                    
                 </div>
             </div>
 

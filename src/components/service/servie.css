@@ -7,9 +7,7 @@
     gap: 120px;
     padding: 40px 0px;
 }
-.service h1 span{
 
-}
 
 
 .service .serviceHeroSec{
@@ -34,8 +32,8 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: aqua;
-    border: 1px solid white;
+    /* background-color: aqua; */
+    /* border: 1px solid white; */
 }
 .service .serviceHeroSec .sHerotopSec .stopLeftSec{
     width: 50%;
@@ -72,8 +70,9 @@
     align-items: center;
     gap: 5px;
 }
-.service .serviceHeroSec .sHerotopSec .stopLeftSec .stBottomRow div button:first-child{
+.service .serviceHeroSec .sHerotopSec .stopLeftSec .stBottomRow div a:first-child button{
     background-color: greenyellow;
+    
     &::after{
         background-color: white;
     }
@@ -170,7 +169,6 @@
 }
 }
 
-
 /* ourPromise */
 .service .ourPromise{
     width: 90%;
@@ -190,8 +188,8 @@
     grid-template-areas: "item1 item2 item2"
                          "item3 item4 item5";
     gap: 10px;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
 }
 .service .ourPromise .ourPromiseSec span{
     font-size: 30px;
@@ -285,8 +283,8 @@
     grid-template-areas: "item1 item2 item3"
                          "item4 ite5 item6";
     gap: 20px;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
     margin-top: 40px;
 }
 .service .ourProcess .ourProcessSec div{

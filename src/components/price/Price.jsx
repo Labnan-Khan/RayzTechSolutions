@@ -5,6 +5,7 @@ import { IoIosArrowForward, IoMdCheckmark } from 'react-icons/io'
 import { MdOutlineCheck } from 'react-icons/md'
 import { IoClose } from 'react-icons/io5'
 import Aos from 'aos'
+import { Link } from 'react-router-dom'
 
 function Price() {
 
@@ -47,7 +48,7 @@ function Price() {
             <div className='pheroLeft'>
                 <h1>{firstPart} <span>{highlightedPart}</span>{lastPart}</h1>
                 <p data-aos="fade-up">We build custom MERN web applications designed around your business requirements, workflows, users, and long-term growth.</p>
-                <button className='hoverLeftAnimationBtn' data-aos="fade-up">Discuss Your Project</button>
+                <Link to="/contactUs"><button className='hoverLeftAnimationBtn' data-aos="fade-up">Discuss Your Project</button></Link>
             </div>
             <div className='pheroimg' data-aos="fade-up"></div>
         </div>
@@ -57,122 +58,122 @@ function Price() {
             <p className='headingp' data-aos="fade-up">Choose the level of design involvement that fits your product goals.</p>
 
             <div className='priceOptionSection' data-aos="fade-up">
-                <div className='switchOptionBtn'>
+                {/* <div className='switchOptionBtn'>
                     <p>Design</p>
                     <button className='isDevelopment'><span></span></button>
                     <p>Development</p>
-                </div>
+                </div> */}
 
                 <div className='priceOptionDisplay'>
 
                     <div className='displayPriceItem' data-aos="fade-up">
-                        <h3>Part-Time Designer</h3>
-                        <p>Best for early validation and focused design tasks</p>
-                        <button className='hoverLeftAnimationBtn'>Start now</button>
+                        <h3>Business Website</h3>
+                        <p>Perfect for businesses that need a professional and high-performing online presence.</p>
+                        <Link to="/contactUs"><button className='hoverLeftAnimationBtn'>Start now</button></Link>
                         <div className='displayPriceItemBottomSec'>
                             <div>
                                 <span><IoMdCheckmark /></span>
-                                <p>Dedicated designer at half-time capacity</p>
+                                <p>Custom responsive design</p>
                             </div>
                             
                             <div>
                                 <span><IoMdCheckmark /></span>
-                                <p>Dedicated designer at half-time capacity</p>
+                                <p>React.js development</p>
                             </div>
 
                             <div>
                                 <span><IoMdCheckmark /></span>
-                                <p>Dedicated designer at half-time capacity</p>
+                                <p>Modern animations & interactions</p>
                             </div>
 
                             <div>
                                 <span><IoMdCheckmark /></span>
-                                <p>Dedicated designer at half-time capacity</p>
+                                <p>Contact & inquiry forms</p>
                             </div>
 
                             <div>
                                 <span><IoMdCheckmark /></span>
-                                <p>Dedicated designer at half-time capacity</p>
+                                <p>SEO-ready structure</p>
                             </div>
 
                             <div>
                                 <span><IoMdCheckmark /></span>
-                                <p>Dedicated designer at half-time capacity</p>
+                                <p>Deployment & setup</p>
                             </div>
                         </div>
                     </div>
 
                     <div className='displayPriceItem' data-aos="fade-up">
-                        <h3>Part-Time Designer</h3>
-                        <p>Best for early validation and focused design tasks</p>
-                        <button className='hoverLeftAnimationBtn'>Start now</button>
+                        <h3>Web Application</h3>
+                        <p>deal for businesses that need custom functionality, dashboards, and powerful workflows.</p>
+                        <Link to="/contactUs"><button className='hoverLeftAnimationBtn'>Start now</button></Link>
                         <div className='displayPriceItemBottomSec'>
                             <div>
                                 <span><IoMdCheckmark /></span>
-                                <p>Dedicated designer at half-time capacity</p>
+                                <p>Custom React.js application</p>
                             </div>
                             
                             <div>
                                 <span><IoMdCheckmark /></span>
-                                <p>Dedicated designer at half-time capacity</p>
+                                <p>Node.js & Express.js backend</p>
                             </div>
 
                             <div>
                                 <span><IoMdCheckmark /></span>
-                                <p>Dedicated designer at half-time capacity</p>
+                                <p>MongoDB database</p>
                             </div>
 
                             <div>
                                 <span><IoMdCheckmark /></span>
-                                <p>Dedicated designer at half-time capacity</p>
+                                <p>Authentication & user roles</p>
                             </div>
 
                             <div>
                                 <span><IoMdCheckmark /></span>
-                                <p>Dedicated designer at half-time capacity</p>
+                                <p>Admin dashboard</p>
                             </div>
 
                             <div>
                                 <span><IoMdCheckmark /></span>
-                                <p>Dedicated designer at half-time capacity</p>
+                                <p>API & third-party integrations</p>
                             </div>
                         </div>
                     </div>
 
 
                     <div className='displayPriceItem' data-aos="fade-up">
-                        <h3>Part-Time Designer</h3>
-                        <p>Best for early validation and focused design tasks</p>
-                        <button className='hoverLeftAnimationBtn'>Start now</button>
+                        <h3>Custom Software</h3>
+                        <p>For businesses looking to turn complex requirements into a powerful digital solution.</p>
+                        <Link to="/contactUs"><button className='hoverLeftAnimationBtn'>Start now</button></Link>
                         <div className='displayPriceItemBottomSec'>
                             <div>
                                 <span><IoMdCheckmark /></span>
-                                <p>Dedicated designer at half-time capacity</p>
+                                <p>Custom system architecture</p>
                             </div>
                             
                             <div>
                                 <span><IoMdCheckmark /></span>
-                                <p>Dedicated designer at half-time capacity</p>
+                                <p>Advanced business workflows</p>
                             </div>
 
                             <div>
                                 <span><IoMdCheckmark /></span>
-                                <p>Dedicated designer at half-time capacity</p>
+                                <p>Multiple user roles & permissions</p>
                             </div>
 
                             <div>
                                 <span><IoMdCheckmark /></span>
-                                <p>Dedicated designer at half-time capacity</p>
+                                <p>Real-time functionality</p>
                             </div>
 
                             <div>
                                 <span><IoMdCheckmark /></span>
-                                <p>Dedicated designer at half-time capacity</p>
+                                <p>Scalable & maintainable codebase</p>
                             </div>
 
                             <div>
                                 <span><IoMdCheckmark /></span>
-                                <p>Dedicated designer at half-time capacity</p>
+                                <p>Payment & API integrations</p>
                             </div>
                         </div>
                     </div>
@@ -326,7 +327,7 @@ function Price() {
                         </div>
                     </div>
                     <p>“I built Arounda to make design and development transparent and human. Our clients stay with us because they see the difference clarity makes. If you’re tired of vague quotes and missed deadlines, contact us. We’ll estimate your project transparently and help you launch without wasted resources.”</p>
-                    <button className='hoverLeftAnimationBtn'>Book a Call</button>
+                    <Link to="/contactUs"><button className='hoverLeftAnimationBtn'>Let’s Build</button></Link>
                 </div>
             </div>
             <h1 className='faqforMobile' data-aos="fade-up"><span>FAQ</span></h1>
@@ -395,7 +396,7 @@ function Price() {
         <div className='pricePageLastDiv' data-aos="fade-up">
             <h1>Estimate with <span>clarity</span>, launch with <span>confidence</span></h1>
             <p>Gain full cost visibility through our precise, transparent pricing model.</p>
-            <button className='hoverLeftAnimationBtn'>Book a Call</button>
+            <Link to="/contactUs"><button className='hoverLeftAnimationBtn'>Let’s Talk</button></Link>
         </div>
     </div>
   )

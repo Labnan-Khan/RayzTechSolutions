@@ -7,6 +7,9 @@
     gap: 150px;
     overflow: hidden;
 }
+a{
+    width: fit-content;
+}
 .homePage .homeHero{
     width: 100%;
     display: flex;
@@ -118,15 +121,12 @@
 .homePage .homeHero .heroMid .heromidItem div span{
     display: flex;
     justify-content: center;align-items: center;
-    background-color: rgba(240, 248, 255, 0.201);
-    padding: 10px 20px;
-    border-radius: 20px;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    &:hover{
-        background-color: white;
-        color: black;
-    }
+    /* border: 1px solid white; */
+    padding-right: 20px;
+    
+    font-size: 15px;
+    color: #cdfe2d;
+    
 }
 
 .homePage .homeHero .heroMid .heromidItem button{
@@ -478,7 +478,7 @@
     justify-content: center;
     align-items: center;
     font-size: 16px;
-    width: 150px;
+    width: 190px;
     padding: 20px;
     border-radius: 30px;
     border: none;
@@ -486,6 +486,7 @@
     cursor: pointer;
     position: relative;
     z-index: 2;
+    color: black;
 
     &::before{
         position: absolute;
@@ -1207,47 +1208,15 @@
     color: black;
 }
 .homePage .bookNow button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 16px;
-    width: 200px;
-    padding: 20px;
-    border-radius: 30px;
+    background-color: white;
+    /* color: white; */
     border: none;
-    text-align: center;
-    cursor: pointer;
-    position: relative;
-    z-index: 2;
-    color: white;
-    background-color: black;
-    transition: all 0.3s ease;
-
-     &:hover{
-        color: black;
-        
-        
-    } 
-    &::after{
-        position: absolute;
-        content: "";
-        width: 50px;
-        height: 100%;
-        top: 0px;
-        left: 0px;
-        background-color: white;
-        opacity: 0;
-        border-radius: 30px;
-        transition: all 0.3s ease;
-        border: 1px solid white;
+    &:hover{
+        color: white;
     }
-    &:hover::after{
-        transition: all 0.3s ease;
-        width: 100%;
-        opacity: 1;
-        left: -1px;
-        top: -1px;
-        z-index: -1;
+    &::after{
+        background-color: black;
+        
     }
 }
 
