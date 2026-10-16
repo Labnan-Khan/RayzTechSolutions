@@ -16,6 +16,8 @@ import { SlGraph } from 'react-icons/sl'
 import { WiLightning } from 'react-icons/wi'
 import { ShimmeringText } from "@/components/ui/shimmering-text";
 import { Link } from 'react-router-dom'
+import { PiListStarThin } from 'react-icons/pi'
+import rtsVideo from '../../assets/rtshomevideo.mp4'
 function HomePage() {
 
   useEffect(() => {
@@ -115,36 +117,45 @@ useEffect(()=>{
 
         <div className='heroHeading'>
           <div className='heroheadingLeft'>
-          <p data-aos="fade-right"><span></span>MERN Stack Web Application Development</p>
-          <div className='herosectionH1'>
-            <h1>From idea to launch,</h1>
-            {/* <h1> we build <span>websites  <span className='headingicon'><RiStackFill /></span> <span className='headingicon'><FaMobileAlt /></span> <span className='headingicon'><TiThLargeOutline /></span></span></h1> */}
-            <h1> we build {""} <ShimmeringText text="Web Applications" duration={1}   wave={true}   color="#cdfe2d"   shimmeringColor="#ffffff"   className="shimmerText"/> </h1>
-            <h1>that perform.</h1>
+            <div className='herosectionH1'>
+              <h1>From idea to launch, we build</h1>
+              <h1>  {""} <ShimmeringText text="Web Applications" duration={1}   wave={true}   color="#cdfe2d"   shimmeringColor="#ffffff"   className="shimmerText"/> that perform.</h1>
+            </div>
+
+            <p>From business platforms and SaaS products to custom web applications, we build <br /> reliable, scalable, and high-performance solutions using the MERN stack.</p>
+            <Link to="/contactUs"><button>Start a Project</button></Link> 
           </div>
 
-          <div className='heroMid' data-aos="fade-up">
+          <div className='heroheadingrightImg'>
 
-            <div className='heromidItem'>
-              <p>{"{/}"}</p>
-              <p>From business platforms and SaaS products to custom web applications, we build reliable, scalable, and high-performance solutions using the MERN stack.</p>
-              <div>
-                <span>SaaS</span>
-                <span>Web Applications</span>
-                <span>Custom Software</span>
-                </div>
-            </div>
             
 
-            <div className='heromidItem'>
-              <p>{"{/}"}</p>
-              <p>Built around your business. Engineered for growth</p>
-              <Link to="/contactUs"><button>Start a Project</button></Link> 
+            <div className='rightMidlle'>
+              <div className='rightLeft'>
+              <div>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <p>so text i will add here  to get </p>
+              </div>
+              
+              <video src={rtsVideo} autoPlay loop muted ></video>
+              
+              <div className='rightRight'>
+              <span>icon</span>
+              <h6>total revenue</h6>
+              <div>
+                <h4>$52 <span>K</span></h4>
+                <p>+12%</p>
+              </div>
+              <p>comparing now 2025</p>
+              </div>
             </div>
 
+            
           </div>
-          </div>
-          <div className='heroheadingrightImg' data-aos="fade-left"></div>
+
         </div>
         <div className='HomeherosectionAnimation'>
           <HeroSectionAnimation/>
