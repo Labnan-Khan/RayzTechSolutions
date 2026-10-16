@@ -111,7 +111,7 @@ a{
 
 
 .homePage .homeHero .heroHeading .heroheadingrightImg{
-    width: 80%;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -134,7 +134,7 @@ a{
     width: 140px;
     align-self: flex-start;
     position: absolute;
-    top: 20px;
+    top: 30px;
     left: -100px;
 
     
